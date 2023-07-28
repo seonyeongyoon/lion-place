@@ -2,7 +2,12 @@
 module.exports = {
   content: ["./client/**/*.html"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        'pretendard':['Pretendard']
+      },
+    },
   },
   plugins: [],
 };
+
