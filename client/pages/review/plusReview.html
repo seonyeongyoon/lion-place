@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>리뷰 등록</title>
+    <link
+      rel="stylesheet preload"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard-dynamic-subset.css"
+    />
+    <link rel="stylesheet" href="../../css/main.css" />
+  </head>
+  <body class="font-pretendard">
+    <div class="mx-auto min-w-[320px] max-w-[599px]">
+      <section class="bg-gray-700">
+        <div class="headerArea">
+          <button>
+            <img src="./../../assets/icons/left.svg" alt="뒤로가기 버튼" />
+          </button>
+          <button>
+            <i><img src="./../../assets/icons/check.svg" alt="체크 아이콘" /></i
+            ><span>등록</span>
+          </button>
+        </div>
+        <div class="inputArea">
+          <div>
+            <input type="text" placeholder="제목을 입력해주세요 필수" />
+            <span>0/20</span>
+          </div>
+          <div>
+            <input type="text" placeholder="제목을 입력해주세요 선택" />
+            <span>0/100</span>
+          </div>
+        </div>
+        <button>커버변경 <span>필수</span></button>
+        <div class="reviewArea rounded-t-xl bg-white">
+          <h3>리뷰<span>0/10</span></h3>
+          <div class="btnGrroup">
+            <button>임시저장</button>
+            <button>순서변경</button>
+            <button>전체삭제</button>
+          </div>
+          <p>내가 작성한 리뷰를 추가해 새로운 테마 리스트를 만들어보세요.</p>
+          <button class="addReview">리뷰 추가하기</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
