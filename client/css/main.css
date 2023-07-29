@@ -694,6 +694,7 @@ video {
   margin-top: 2px;
 }
 
+<<<<<<< HEAD
 .line-clamp-3 {
   overflow: hidden;
   display: -webkit-box;
@@ -707,6 +708,54 @@ video {
 
 .inline-block {
   display: inline-block;
+=======
+.mr-1 {
+  margin-right: 0.25rem;
+}
+
+.mr-\[\] {
+  margin-right: ;
+}
+
+.mr-\[7px\] {
+  margin-right: 7px;
+}
+
+.mr-\[6px\] {
+  margin-right: 6px;
+}
+
+.mr-\[px\] {
+  margin-right: px;
+}
+
+.mr-\[5px\] {
+  margin-right: 5px;
+}
+
+.mr-\[3px\] {
+  margin-right: 3px;
+}
+
+.mr-\[2px\] {
+  margin-right: 2px;
+}
+
+.mr-\[1px\] {
+  margin-right: 1px;
+}
+
+.mr-\[8px\] {
+  margin-right: 8px;
+}
+
+.mr-0 {
+  margin-right: 0px;
+}
+
+.mr-px {
+  margin-right: 1px;
+>>>>>>> f2cac99849032eccaf66018891f1db6fa984ee6d
 }
 
 .flex {
@@ -717,6 +766,7 @@ video {
   height: 30px;
 }
 
+<<<<<<< HEAD
 .h-\[50px\] {
   height: 50px;
 }
@@ -733,6 +783,8 @@ video {
   width: 1.5rem;
 }
 
+=======
+>>>>>>> f2cac99849032eccaf66018891f1db6fa984ee6d
 .w-7 {
   width: 1.75rem;
 }
@@ -741,10 +793,13 @@ video {
   width: 22px;
 }
 
+<<<<<<< HEAD
 .w-\[30px\] {
   width: 30px;
 }
 
+=======
+>>>>>>> f2cac99849032eccaf66018891f1db6fa984ee6d
 .w-full {
   width: 100%;
 }
@@ -895,6 +950,7 @@ video {
           background-clip: text;
 }
 
+<<<<<<< HEAD
 .bg-top {
   background-position: top;
 }
@@ -915,16 +971,21 @@ video {
   padding: 0.5rem;
 }
 
+=======
+>>>>>>> f2cac99849032eccaf66018891f1db6fa984ee6d
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
 }
 
+<<<<<<< HEAD
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
 
+=======
+>>>>>>> f2cac99849032eccaf66018891f1db6fa984ee6d
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -960,6 +1021,7 @@ video {
   padding-bottom: 0.5rem;
 }
 
+<<<<<<< HEAD
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -970,6 +1032,8 @@ video {
   padding-bottom: 1.5rem;
 }
 
+=======
+>>>>>>> f2cac99849032eccaf66018891f1db6fa984ee6d
 .pb-\[10px\] {
   padding-bottom: 10px;
 }
@@ -1030,6 +1094,7 @@ video {
   font-weight: 600;
 }
 
+<<<<<<< HEAD
 .text-gray-300 {
   --tw-text-opacity: 1;
   color: rgb(209 213 219 / var(--tw-text-opacity));
@@ -1043,6 +1108,10 @@ video {
 .text-gray-500 {
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
+=======
+.tracking-tighter {
+  letter-spacing: -0.05em;
+>>>>>>> f2cac99849032eccaf66018891f1db6fa984ee6d
 }
 
 .text-indigo-500 {
