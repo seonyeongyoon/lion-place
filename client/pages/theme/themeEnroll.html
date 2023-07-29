@@ -20,13 +20,13 @@
         <div
           class="fixed top-0 z-50 flex w-full max-w-[599px] items-center bg-white px-[18px] py-2"
         >
-          <time datetime="2023-07-28T03:15" class="font">3:15</time>
+          <time datetime="2023-07-28T03:15" class="font-semibold">3:15</time>
           <div class="flex-grow">
-            <img src="/assets/icons/position.svg" alt="" class="pl-1" />
+            <img src="/assets/icons/position.svg" alt="" class="pl-1" aria-hidden="true"/>
           </div>
-          <img src="/assets/icons/battery.svg" alt="" />
-          <span class="pl-1 text-xs">LTE</span>
-          <img src="/assets/icons/4g.svg" alt="" class="pl-1" />
+          <img src="/assets/icons/battery.svg" alt="" aria-hidden="true"/>
+          <span class="px-1 text-xs font-bold" aria-hidden="true">LTE</span>
+          <img src="/assets/icons/4g.svg" alt="" aria-hidden="true"/>
         </div>
       </header>
       <nav
@@ -34,11 +34,11 @@
       >
         <!-- 공통내비 -->
         <h2 class="sr-only">메인 메뉴</h2>
-        <ul class="flex justify-evenly">
+        <ul class="flex justify-between">
           <li class="self-end">
             <a
               href="/"
-              class="flex flex-col items-center justify-center px-3 py-2"
+              class="flex flex-col items-center justify-center px-3 py-2 mr-[8px]"
             >
               <img
                 src="/assets/icons/map.svg"
@@ -46,18 +46,18 @@
                 aria-hidden="true"
                 class="w-[22px]"
               />
-              <span class="text-xs">지도</span>
+              <span class="text-xs tracking-tighter">지도</span>
             </a>
           </li>
           <li class="self-end">
-            <a href="/" class="flex flex-col items-center px-3 py-2">
+            <a href="/" class="flex flex-col items-center px-3 py-2 mr-[2px]">
               <img
                 src="/assets/icons/save.svg"
                 alt=""
                 aria-hidden="true"
                 class="w-[22px]"
               />
-              <span class="text-xs">저장</span>
+              <span class="text-xs mt-[2px] tracking-tighter">저장</span>
             </a>
           </li>
           <li class="self-end">
@@ -71,7 +71,7 @@
                 aria-hidden="true"
                 class="w-6"
               />
-              <span class="text-xs">대중교통</span>
+              <span class="text-xs mt-[2px] tracking-tighter">대중교통</span>
             </a>
           </li>
           <li class="self-end">
@@ -85,7 +85,7 @@
                 aria-hidden="true"
                 class="w-7"
               />
-              <span class="text-xs">내비게이션</span>
+              <span class="text-xs tracking-tighter">내비게이션</span>
             </a>
           </li>
           <li class="self-end">
@@ -99,7 +99,7 @@
                 aria-hidden="true"
                 class="w-6"
               />
-              <span class="text-xs">MY</span>
+              <span class="text-xs mt-[1px] tracking-tighter">MY</span>
             </a>
           </li>
         </ul>
