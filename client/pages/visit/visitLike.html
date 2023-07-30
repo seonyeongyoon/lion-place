@@ -1,0 +1,517 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+      type="image/xml+svg"
+    />
+    <link rel="stylesheet" href="./../../css/main.css" />
+    <script src="./../../js/main.js" type="module"></script>
+    <title>project</title>
+  </head>
+  <body class="font-pretendard">
+    <div class="mx-auto min-w-[320px] max-w-[599px]">
+      <header class="box-content pb-10">
+        <!-- 최상단 통신상태 및 시간표시 -->
+        <div
+          class="fixed top-0 z-50 flex w-full max-w-[599px] items-center bg-white px-[18px] py-2"
+        >
+          <time datetime="2023-07-28T03:15" class="font-semibold">3:15</time>
+          <div class="flex-grow">
+            <img
+              src="./../../assets/icons/position.svg"
+              alt=""
+              class="pl-1"
+              aria-hidden="true"
+            />
+          </div>
+          <img
+            src="./../../assets/icons/battery.svg"
+            alt=""
+            aria-hidden="true"
+          />
+          <span class="px-1 text-xs font-bold" aria-hidden="true">LTE</span>
+          <img src="./../../assets/icons/4g.svg" alt="" aria-hidden="true" />
+        </div>
+      </header>
+      <!-- !main -->
+      <main class="pb-20">
+        <!-- #미랑컬헤어 -->
+        <div class="relative border-b-[1px] p-[14px]">
+          <dl class="text-sm leading-normal">
+            <dt class="font-semibold">미랑컬헤어 상동점</dt>
+            <dd class="text-gray/300">2023.1.18 (수) 9번째 방문</dd>
+            <dd class="text-gray/500">인봉 실장</dd>
+          </dl>
+          <a href="/">
+            <svg
+              class="absolute right-[0.875rem] top-[0.875rem]"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M18 18L12 12M12 12L6 6M12 12L18 6M12 12L6 18"
+                stroke="black"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+        </div>
+        <!-- #이곳이 마음에 든다면 -->
+        <div class="flex flex-col items-center gap-2 px-[4.625rem] py-10">
+          <dl class="flex flex-col items-center leading-normal">
+            <dt class="mb-1 text-lg font-bold">이 곳이 마음에 든다면,</dt>
+            <dd class="text-center text-sm font-light text-gray/300">
+              ‘좋아요' 누르고 취향이 비슷한 사람을 추천받으세요.
+            </dd>
+          </dl>
+          <button type="button" class="rounded-[4px] bg-primary px-5 py-2.5">
+            <span class="text-sm leading-normal text-red-600"
+              >❤️<span class="ml-1 font-semibold text-white"
+                >이런 곳 좋아요!</span
+              ></span
+            >
+          </button>
+        </div>
+        <!-- #어떤 점이 좋았나요? 컨테이너 -->
+        <div class="bg-gray/50">
+          <!-- 어떤 점이 좋았나요? -->
+          <div class="px-[60px] py-6">
+            <dl class="flex flex-col items-center gap-2 leading-normal">
+              <dt class="text-center text-lg font-bold">
+                어떤 점이 좋았나요? (1개~5개)
+              </dt>
+              <dd class="text-center text-sm font-normal text-gray/300">
+                이 장소에 어울리는 키워드를 골라주세요.
+              </dd>
+            </dl>
+          </div>
+          <!-- #키워드 -->
+          <div class="relative block overflow-hidden">
+            <div class="flex overflow-hidden">
+              <!-- ^line1 -->
+              <div class="box-content block h-[260px] w-[320px] px-5">
+                <!-- keyword1 -->
+                <button
+                  type="button"
+                  class="mb-2 flex content-center items-center rounded-[4px] bg-primary px-5 py-2.5 drop-shadow-lg"
+                >
+                  <img
+                    src="./../../assets/icons/green_heart.svg"
+                    alt="초록색 하트 이모티콘"
+                  />
+                  <span
+                    class="ml-1 whitespace-nowrap text-sm font-normal text-white"
+                    >원하는 스타일로 잘해줘요</span
+                  >
+                </button>
+                <!-- keyword2 -->
+                <button
+                  type="button"
+                  class="mb-2 flex content-center items-center rounded-[4px] bg-primary px-5 py-2.5 drop-shadow-lg"
+                >
+                  <img
+                    src="./../../assets/icons/hair_cut.svg"
+                    alt="머리카락 자르는 이모티콘"
+                  />
+                  <span
+                    class="ml-1 whitespace-nowrap text-sm font-normal text-white"
+                    >스타일 추천을 잘해줘요</span
+                  >
+                </button>
+                <!-- keyword3 -->
+                <button
+                  type="button"
+                  class="mb-2 flex content-center items-center rounded-[4px] bg-primary px-5 py-2.5 drop-shadow-lg"
+                >
+                  <img
+                    src="./../../assets/icons/rose.svg"
+                    alt="장미꽃 이모티콘"
+                  />
+                  <span
+                    class="ml-1 whitespace-nowrap text-sm font-normal text-white"
+                    >고급스러워요</span
+                  >
+                </button>
+                <!-- keyword4 -->
+                <button
+                  type="button"
+                  class="mb-2 flex content-center items-center rounded-[4px] bg-primary px-5 py-2.5 drop-shadow-lg"
+                >
+                  <img
+                    src="./../../assets/icons/sunglass_emoji.svg"
+                    alt="선글라스 쓴 이모티콘"
+                  />
+                  <span
+                    class="ml-1 whitespace-nowrap text-sm font-normal text-white"
+                    >트렌디해요</span
+                  >
+                </button>
+
+                <!-- down arrow -->
+                <div class="flex justify-center">
+                  <button
+                    class="left-[3.1875rem] top-[2.875rem] flex h-9 w-9 items-center justify-center rounded-full bg-white drop-shadow-[0_4px_4px_rgba(0,0,0,0.15)]"
+                  >
+                    <img
+                      src="./../../assets/icons/gray_arrow_down.svg"
+                      alt="아래 방향 화살표"
+                    />
+                  </button>
+                </div>
+              </div>
+
+              <!-- ^line2 -->
+              <div class="box-content block h-[260px] w-[320px] px-5">
+                <!-- keyword1 -->
+                <button
+                  type="button"
+                  class="mb-2 flex content-center items-center rounded-[4px] bg-primary px-5 py-2.5 drop-shadow-lg"
+                >
+                  <img
+                    src="./../../assets/icons/green_heart.svg"
+                    alt="초록색 하트 이모티콘"
+                  />
+                  <span
+                    class="ml-1 whitespace-nowrap text-sm font-normal text-white"
+                    >원하는 스타일로 잘해줘요</span
+                  >
+                </button>
+                <!-- keyword2 -->
+                <button
+                  type="button"
+                  class="mb-2 flex content-center items-center rounded-[4px] bg-primary px-5 py-2.5 drop-shadow-lg"
+                >
+                  <img
+                    src="./../../assets/icons/wash_hair.svg"
+                    alt="머리 감는 이모티콘"
+                  />
+                  <span
+                    class="ml-1 whitespace-nowrap text-sm font-normal text-white"
+                    >관리법을 잘 알려줘요</span
+                  >
+                </button>
+                <!-- keyword3 -->
+                <button
+                  type="button"
+                  class="mb-2 flex content-center items-center rounded-[4px] bg-primary px-5 py-2.5 drop-shadow-lg"
+                >
+                  <img
+                    src="./../../assets/icons/hands.svg"
+                    alt="두 손 이모티콘"
+                  />
+                  <span
+                    class="ml-1 whitespace-nowrap text-sm font-normal text-white"
+                    >손이 빨라요</span
+                  >
+                </button>
+                <!-- keyword4 -->
+                <button
+                  type="button"
+                  class="mb-2 flex content-center items-center rounded-[4px] bg-primary px-5 py-2.5 drop-shadow-lg"
+                >
+                  <img
+                    src="./../../assets/icons/smile_emoji.svg"
+                    alt="웃고 있는 이모티콘"
+                  />
+                  <span
+                    class="ml-1 whitespace-nowrap text-sm font-normal text-white"
+                    >친절해요</span
+                  >
+                </button>
+
+                <!-- down arrow -->
+                <div class="flex justify-center">
+                  <button
+                    class="left-[3.1875rem] top-[2.875rem] flex h-9 w-9 items-center justify-center rounded-full bg-white drop-shadow-[0_4px_4px_rgba(0,0,0,0.15)]"
+                  >
+                    <img
+                      src="./../../assets/icons/gray_arrow_down.svg"
+                      alt="아래 방향 화살표"
+                    />
+                  </button>
+                </div>
+              </div>
+
+              <!-- ^line3 -->
+              <div class="box-content block h-[260px] w-[320px] px-5">
+                <!-- keyword1 -->
+                <button
+                  type="button"
+                  class="mb-2 flex content-center items-center rounded-[4px] bg-primary px-5 py-2.5 drop-shadow-lg"
+                >
+                  <img
+                    src="./../../assets/icons/search.svg"
+                    alt="돋보기 이모티콘"
+                  />
+                  <span
+                    class="ml-1 whitespace-nowrap text-sm font-normal text-white"
+                    >시술이 꼼꼼해요</span
+                  >
+                </button>
+                <!-- keyword2 -->
+                <button
+                  type="button"
+                  class="mb-2 flex content-center items-center rounded-[4px] bg-primary px-5 py-2.5 drop-shadow-lg"
+                >
+                  <img
+                    src="./../../assets/icons/hands.svg"
+                    alt="두 손 이모티콘"
+                  />
+                  <span class="ml-1 text-sm font-normal text-white"
+                    >손이 빨라요</span
+                  >
+                </button>
+                <!-- keyword3 -->
+                <button
+                  type="button"
+                  class="mb-2 flex content-center items-center rounded-[4px] bg-primary px-5 py-2.5 drop-shadow-lg"
+                >
+                  <img
+                    src="./../../assets/icons/wash_hair.svg"
+                    alt="머리 감는 이모티콘"
+                  />
+                  <span
+                    class="ml-1 whitespace-nowrap text-sm font-normal text-white"
+                    >관리법을 잘 알려줘요</span
+                  >
+                </button>
+                <!-- keyword4 -->
+                <button
+                  type="button"
+                  class="mb-2 flex content-center items-center rounded-[4px] bg-primary px-5 py-2.5 drop-shadow-lg"
+                >
+                  <img
+                    src="./../../assets/icons/chart.svg"
+                    alt="차트 이모티콘"
+                  />
+                  <span
+                    class="ml-1 whitespace-nowrap text-sm font-normal text-white"
+                    >상담이 자세해요</span
+                  >
+                </button>
+
+                <!-- down arrow -->
+                <div class="flex justify-center">
+                  <button
+                    class="left-[3.1875rem] top-[2.875rem] flex h-9 w-9 items-center justify-center rounded-full bg-white drop-shadow-[0_4px_4px_rgba(0,0,0,0.15)]"
+                  >
+                    <img
+                      src="./../../assets/icons/gray_arrow_down.svg"
+                      alt="아래 방향 화살표"
+                    />
+                  </button>
+                </div>
+              </div>
+
+              <!-- ^line4 -->
+              <div class="box-content block h-[260px] w-[320px] px-5">
+                <!-- keyword1 -->
+                <button
+                  type="button"
+                  class="mb-2 flex content-center items-center rounded-[4px] bg-primary px-5 py-2.5 drop-shadow-lg"
+                >
+                  <img src="./../../assets/icons/moon.svg" alt="달 이모티콘" />
+                  <span
+                    class="ml-1 whitespace-nowrap text-sm font-normal text-white"
+                    >가격이 합리적이에요</span
+                  >
+                </button>
+                <!-- keyword2 -->
+                <button
+                  type="button"
+                  class="mb-2 flex content-center items-center rounded-[4px] bg-primary px-5 py-2.5 drop-shadow-lg"
+                >
+                  <img
+                    src="./../../assets/icons/diamond.svg"
+                    alt="다이아몬드 이모티콘"
+                  />
+                  <span
+                    class="ml-1 whitespace-nowrap text-sm font-normal text-white"
+                    >비싼 만큼 가치가 있어요</span
+                  >
+                </button>
+                <!-- keyword3 -->
+                <button
+                  type="button"
+                  class="mb-2 flex content-center items-center rounded-[4px] bg-primary px-5 py-2.5 drop-shadow-lg"
+                >
+                  <img
+                    src="./../../assets/icons/shampoo.svg"
+                    alt="샴푸 이모티콘"
+                  />
+                  <span
+                    class="ml-1 whitespace-nowrap text-sm font-normal text-white"
+                    >좋은 제품을 사용해요</span
+                  >
+                </button>
+                <!-- keyword4 -->
+                <button
+                  type="button"
+                  class="mb-2 flex content-center items-center rounded-[4px] bg-primary px-5 py-2.5 drop-shadow-lg"
+                >
+                  <img
+                    src="./../../assets/icons/red_car.svg"
+                    alt="자동차 이모티콘"
+                  />
+                  <span
+                    class="ml-1 whitespace-nowrap text-sm font-normal text-white"
+                    >주차하기 편해요</span
+                  >
+                </button>
+
+                <!-- down arrow -->
+                <div class="flex justify-center">
+                  <button
+                    class="left-[3.1875rem] top-[2.875rem] flex h-9 w-9 items-center justify-center rounded-full bg-white drop-shadow-[0_4px_4px_rgba(0,0,0,0.15)]"
+                  >
+                    <img
+                      src="./../../assets/icons/gray_arrow_down.svg"
+                      alt="아래 방향 화살표"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- #리뷰를 남겨주세요 -->
+        <div class="mb-[22px] mt-[34px]">
+          <div
+            class="mb-[22px] mt-[34px] flex flex-col items-center gap-4 px-4"
+          >
+            <h3 class="text-lg font-bold text-black">리뷰를 남겨주세요</h3>
+            <button
+              type="button"
+              class="flex items-center gap-1 rounded-[4px] border-[1px] border-black bg-white p-3 text-xs font-semibold leading-normal"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+              >
+                <path
+                  d="M4.5 12.75H13.5L10.6875 9L8.4375 12L6.75 9.75L4.5 12.75ZM3 15.75C2.5875 15.75 2.2345 15.6033 1.941 15.3097C1.647 15.0157 1.5 14.6625 1.5 14.25V5.25C1.5 4.8375 1.647 4.4845 1.941 4.191C2.2345 3.897 2.5875 3.75 3 3.75H5.3625L6.75 2.25H11.25L12.6375 3.75H15C15.4125 3.75 15.7657 3.897 16.0597 4.191C16.3533 4.4845 16.5 4.8375 16.5 5.25V14.25C16.5 14.6625 16.3533 15.0157 16.0597 15.3097C15.7657 15.6033 15.4125 15.75 15 15.75H3ZM15 14.25V5.25H11.9625L10.5938 3.75H7.40625L6.0375 5.25H3V14.25H15Z"
+                  fill="black"
+                />
+              </svg>
+              사진추가
+              <span class="text-gray/300">최대 20장</span>
+            </button>
+            <div class="flex flex-col bg-gray/50 px-3 py-6">
+              <dl class="text-xs leading-normal">
+                <dt class="text-gray/300">리뷰 작성하기</dt>
+                <dd class="text-gray/500">
+                  진짜 맨날 근처오면 와서 4-5개씩은 사가는 곳입니다. 비건디저트
+                  특유의 향이 안나서 더 좋아요!
+                </dd>
+              </dl>
+              <span class="self-end text-xs text-black"
+                >0<span class="text-gray/500">/400</span></span
+              >
+            </div>
+          </div>
+          <div class="flex items-center justify-between gap-4 px-4">
+            <a href="/" class="text-xs font-normal leading-normal underline"
+              >리뷰 작성 유의사항</a
+            >
+            <button
+              type="button"
+              class="box-content rounded-[4px] bg-primary px-[28px] py-3"
+            >
+              <span class="text-sm font-normal text-white">등록하기</span>
+            </button>
+          </div>
+        </div>
+      </main>
+
+      <!-- !하단 nav -->
+      <nav
+        class="fixed bottom-0 z-50 w-full max-w-[599px] bg-white px-[17px] pb-[10px]"
+      >
+        <!-- 공통내비 -->
+        <h2 class="sr-only">메인 메뉴</h2>
+        <ul class="flex justify-between">
+          <li class="self-end">
+            <a
+              href="/"
+              class="mr-[8px] flex flex-col items-center justify-center px-3 py-2"
+            >
+              <img
+                src="/assets/icons/map.svg"
+                alt=""
+                aria-hidden="true"
+                class="w-[22px]"
+              />
+              <span class="text-xs tracking-tighter">지도</span>
+            </a>
+          </li>
+          <li class="self-end">
+            <a href="/" class="mr-[2px] flex flex-col items-center px-3 py-2">
+              <img
+                src="/assets/icons/save.svg"
+                alt=""
+                aria-hidden="true"
+                class="w-[22px]"
+              />
+              <span class="mt-[2px] text-xs tracking-tighter">저장</span>
+            </a>
+          </li>
+          <li class="self-end">
+            <a
+              href="/"
+              class="flex flex-col items-center justify-center px-3 py-2"
+            >
+              <img
+                src="/assets/icons/subway.svg"
+                alt=""
+                aria-hidden="true"
+                class="w-6"
+              />
+              <span class="mt-[2px] text-xs tracking-tighter">대중교통</span>
+            </a>
+          </li>
+          <li class="self-end">
+            <a
+              href="/"
+              class="flex flex-col items-center justify-center px-3 py-2"
+            >
+              <img
+                src="/assets/icons/car.svg"
+                alt=""
+                aria-hidden="true"
+                class="w-7"
+              />
+              <span class="text-xs tracking-tighter">내비게이션</span>
+            </a>
+          </li>
+          <li class="self-end">
+            <a
+              href="/"
+              class="flex flex-col items-center justify-center px-3 py-2"
+            >
+              <img
+                src="/assets/icons/my.svg"
+                alt=""
+                aria-hidden="true"
+                class="w-6"
+              />
+              <span class="mt-[1px] text-xs tracking-tighter">MY</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+</html>
