@@ -74,7 +74,10 @@
               ‘좋아요' 누르고 취향이 비슷한 사람을 추천받으세요.
             </dd>
           </dl>
-          <button type="button" class="rounded-[4px] bg-primary px-5 py-2.5">
+          <button
+            type="button"
+            class="w-full max-w-[320px] rounded-[4px] bg-primary px-5 py-2.5"
+          >
             <span class="text-sm leading-normal text-red-600"
               >❤️<span class="ml-1 font-semibold text-white"
                 >이런 곳 좋아요!</span
@@ -392,7 +395,7 @@
             <h3 class="text-lg font-bold text-black">리뷰를 남겨주세요</h3>
             <button
               type="button"
-              class="flex items-center gap-1 rounded-[4px] border-[1px] border-black bg-white p-3 text-xs font-semibold leading-normal"
+              class="flex w-full max-w-[320px] justify-center gap-1 rounded-[4px] border-[1px] border-black bg-white p-3 text-xs font-semibold leading-normal"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -409,7 +412,10 @@
               사진추가
               <span class="text-gray/300">최대 20장</span>
             </button>
-            <div class="flex flex-col bg-gray/50 px-3 py-6">
+          </div>
+          <!-- 리뷰 작성란 -->
+          <div class="px-4">
+            <div class="mb-4 flex flex-col bg-gray/50 px-3 py-6">
               <dl class="text-xs leading-normal">
                 <dt class="text-gray/300">리뷰 작성하기</dt>
                 <dd class="text-gray/500">
@@ -421,17 +427,18 @@
                 >0<span class="text-gray/500">/400</span></span
               >
             </div>
-          </div>
-          <div class="flex items-center justify-between gap-4 px-4">
-            <a href="/" class="text-xs font-normal leading-normal underline"
-              >리뷰 작성 유의사항</a
-            >
-            <button
-              type="button"
-              class="box-content rounded-[4px] bg-primary px-[28px] py-3"
-            >
-              <span class="text-sm font-normal text-white">등록하기</span>
-            </button>
+            <!-- 등록 버튼 -->
+            <div class="flex items-center justify-between gap-4">
+              <a href="/" class="text-xs font-normal leading-normal underline"
+                >리뷰 작성 유의사항</a
+              >
+              <button
+                type="button"
+                class="box-content rounded-[4px] bg-primary px-[28px] py-3"
+              >
+                <span class="text-sm font-normal text-white">등록하기</span>
+              </button>
+            </div>
           </div>
         </div>
       </main>
