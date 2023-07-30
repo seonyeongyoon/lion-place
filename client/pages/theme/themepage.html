@@ -14,10 +14,10 @@
     <title>project</title>
   </head>
 
-  <body class="h-[43.25rem]">
+  <body class="font-pretendard">
     <!-- !header -->
     <div class="mx-auto min-w-[320px] max-w-[599px]">
-      <header>
+      <header class="pb-[24px]">
         <!-- 최상단 통신상태 및 시간표시 -->
         <div
           class="fixed top-0 z-50 flex w-full max-w-[599px] items-center bg-white px-[18px] py-2"
@@ -25,15 +25,19 @@
           <time datetime="2023-07-28T03:15" class="font-semibold">3:15</time>
           <div class="flex-grow">
             <img
-              src="/assets/icons/position.svg"
+              src="./../../assets/icons/position.svg"
               alt=""
               class="pl-1"
               aria-hidden="true"
             />
           </div>
-          <img src="/assets/icons/battery.svg" alt="" aria-hidden="true" />
+          <img
+            src="./../../assets/icons/battery.svg"
+            alt=""
+            aria-hidden="true"
+          />
           <span class="px-1 text-xs font-bold" aria-hidden="true">LTE</span>
-          <img src="/assets/icons/4g.svg" alt="" aria-hidden="true" />
+          <img src="./../../assets/icons/4g.svg" alt="" aria-hidden="true" />
         </div>
       </header>
 
@@ -212,12 +216,27 @@
       </section>
       <!-- #nav -->
       <nav
-        class="mx-auto box-content flex h-10 min-w-[320px] max-w-[599px] justify-around bg-primary pt-3"
+        class="mx-auto box-content flex h-10 min-w-[320px] max-w-[599px] justify-around bg-primary px-2 pt-3"
       >
-        <button class="font-bold text-disabled">피드</button>
-        <button class="font-bold text-disabled">방문</button>
-        <button class="font-bold text-disabled">리뷰</button>
-        <button class="font-bold text-disabled">예약•주문</button>
+        <button class="box-content w-[4.375rem] font-bold text-gray/300">
+          피드
+        </button>
+        <button class="box-content w-[4.375rem] font-bold text-gray/300">
+          방문
+        </button>
+        <button
+          class="relative box-content w-[4.375rem] font-bold text-lightblue/300"
+        >
+          리뷰
+          <div
+            class="absolute bottom-0 box-content h-0.5 w-[4.375rem] min-w-full bg-lightblue/300"
+          ></div>
+        </button>
+        <button
+          class="box-content w-[4.375rem] p-1 text-base font-bold text-gray/300"
+        >
+          예약•주문
+        </button>
       </nav>
 
       <main class="pb-20">
