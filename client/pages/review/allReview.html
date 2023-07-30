@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>모든 리뷰</title>
+    <link
+      rel="stylesheet preload"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard-dynamic-subset.css"
+    />
+    <link rel="stylesheet" href="../../css/main.css" />
+  </head>
+  <body class="font-pretendard">
+    <div class="mx-auto min-w-[320px] max-w-[599px]">
+      <!-- header -->
+      <header>
+        <!-- 최상단 통신상태 및 시간표시 -->
+        <div
+          class="fixed top-0 z-50 flex w-full max-w-[599px] items-center bg-white px-[18px] py-2"
+        >
+          <time datetime="2023-07-28T03:15" class="font-semibold">3:15</time>
+          <div class="flex-grow">
+            <img
+              src="/assets/icons/position.svg"
+              alt=""
+              class="pl-1"
+              aria-hidden="true"
+            />
+          </div>
+          <img src="/assets/icons/battery.svg" alt="" aria-hidden="true" />
+          <span class="px-1 text-xs font-bold" aria-hidden="true">LTE</span>
+          <img src="/assets/icons/4g.svg" alt="" aria-hidden="true" />
+        </div>
+      </header>
+      <!-- //header -->
+
+      <!-- common navigation -->
+      <nav
+        class="hidden fixed bottom-0 z-50 w-full max-w-[599px] bg-white px-[17px] pb-[10px]"
+      >
+        <!-- 공통내비 -->
+        <h2 class="sr-only">메인 메뉴</h2>
+        <ul class="flex justify-between">
+          <li class="self-end">
+            <a
+              href="/"
+              class="mr-2 flex flex-col items-center justify-center px-3 py-2"
+            >
+              <img
+                src="/assets/icons/map.svg"
+                alt=""
+                aria-hidden="true"
+                class="w-[22px]"
+              />
+              <span class="text-xs">지도</span>
+            </a>
+          </li>
+          <li class="self-end">
+            <a href="/" class="mr-[10px] flex flex-col items-center px-3 py-2">
+              <img
+                src="/assets/icons/save.svg"
+                alt=""
+                aria-hidden="true"
+                class="w-[22px]"
+              />
+              <span class="mt-[2px] text-xs">저장</span>
+            </a>
+          </li>
+          <li class="self-end">
+            <a
+              href="/"
+              class="flex flex-col items-center justify-center px-3 py-2"
+            >
+              <img
+                src="/assets/icons/subway.svg"
+                alt=""
+                aria-hidden="true"
+                class="w-6"
+              />
+              <span class="mt-[2px] text-xs">대중교통</span>
+            </a>
+          </li>
+          <li class="self-end">
+            <a
+              href="/"
+              class="flex flex-col items-center justify-center px-3 py-2"
+            >
+              <img
+                src="/assets/icons/car.svg"
+                alt=""
+                aria-hidden="true"
+                class="w-7"
+              />
+              <span class="text-xs">내비게이션</span>
+            </a>
+          </li>
+          <li class="self-end">
+            <a
+              href="/"
+              class="flex flex-col items-center justify-center px-3 py-2"
+            >
+              <img
+                src="/assets/icons/my.svg"
+                alt=""
+                aria-hidden="true"
+                class="w-6"
+              />
+              <span class="mt-[1px] text-xs">MY</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- //common navigation -->
+
+      <section class="pt-10 bg-gray/100">
+        <div class=" bg-lightblue/900">
+          <nav class="topNav bottom-0 left-0 w-full text-center">
+            <ul class="topNavList flex justify-between">
+              <li class="topNavItem active flex-shrink-0 flex-grow p-2">
+                <a
+                  href="#"
+                  class="block border-b-2 border-lightblue/300 text-base font-semibold text-lightblue/300 p-1"
+                  >홈</a
+                >
+              </li>
+              <li class="topNavItem flex-shrink-0 flex-grow p-2">
+                <a
+                  href="#"
+                  class="block text-base font-semibold text-lightblue/300 p-1"
+                  >소식</a
+                >
+              </li>
+              <li class="topNavItem flex-shrink-0 flex-grow p-2">
+                <a
+                  href="#"
+                  class="block text-base font-semibold text-lightblue/300 p-1"
+                  >메뉴</a
+                >
+              </li>
+              <li class="topNavItem flex-shrink-0 flex-grow p-2">
+                <a
+                  href="#"
+                  class="block text-base font-semibold text-lightblue/300 p-1"
+                  >리뷰</a
+                >
+              </li>
+              <li class="topNavItem flex-shrink-0 flex-grow p-2">
+                <a
+                  href="#"
+                  class="block text-base font-semibold text-lightblue/300 p-1"
+                  >사진</a
+                >
+              </li>
+              <li class="topNavItem flex-shrink-0 flex-grow p-2">
+                <a
+                  href="#"
+                  class="block text-base font-semibold text-lightblue/300 p-1"
+                  >지도</a
+                >
+              </li>
+              <li class="topNavItem flex-shrink-0 flex-grow p-2">
+                <a
+                  href="#"
+                  class="block text-base font-semibold text-lightblue/300 p-1"
+                  >주변</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="noticeArea py-3 px-4">
+          <div class="notce flex justify-between">
+          <p class="text-gray/300 font-semibold"><strong class="text-black">이벤트, 혜택</strong> 알림을 받아보세요!</p>
+          <button class="font-semibold"><i class="inline-block align-middle"><img src="./../../assets/icons/ring.svg" alt="종 아이콘" /></i>알림받기</button>
+          </div>
+
+          <div class="rounded-2xl overflow-hidden flex mt-4">
+            <figure class="basis-24 flex-shrink-0"><img src="./../../assets/allReview/noticeImage.jpg" alt="" /></figure>
+            <div class="bg-white flex flex-col gap-1 justify-center px-3">
+              <p class="title font-semibold">영수증리뷰 올리고 음료수 먹자!</p>
+              <p class="date text-gray/500">2023.02.02</p>
+              <p class="date text-gray/300 overflow-hidden line-clamp-2 text-ellipsis">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+            </div>
+          </div>
+        </div>
+        <!-- //noticeArea -->
+
+        <div class="storeInfo bg-white">
+          <ul>
+            <li class="location border-b border-gray/300 px-4 py-3">
+              <div>
+                <i class="inline-block align-middle"><img src="/assets/icons/location.svg" alt="위치 아이콘" /></i>
+                <span class="text-gray/500">서울 마포구 동교로 27길 20</span>
+                <button class="downBtn"><img src="/assets/icons/down.svg" alt="" /></button>
+                <button class="text-lightblue/300"><i class="inline-block align-middle"><img src="/assets/icons/gps.svg" alt="gps 아이콘" /></i>거리뷰</button>
+              </div>
+              <div class="text-gray/500">
+                <span class="subWayLineNum bg-lightblue/100 text-white rounded-full p-1">2</span>
+                <span class="subWayLineNum bg-lightblue/100 text-white rounded-full p-1">공항</span>
+                <span class="subWayLineNum bg-lightblue/100 text-white rounded-full p-1">경의중앙</span>
+                <strong class="stationName text-black">홍대입구역</strong>
+                <span class="exitNum">2</span>번 출구에서
+                <span class="distance text-lightblue/300">314m</span>
+              </div>
+            </li>
+            <li class="info border-b border-gray/300 px-4 py-2 text-gray/500">
+              <i class="inline-block align-middle"><img src="/assets/icons/time.svg" alt="시계 아이콘" /></i>
+              <strong class="storeStatus text-black font-semibold">영업 중</strong>  • <span class="cloasTime">01:00</span>에 영업 종료
+              <button class="downBtn"><img src="/assets/icons/down.svg" alt="" /></button>
+            </li>
+            <li class="tel border-b border-gray/300 px-4 py-2 text-gray/500">
+              <i class="inline-block align-middle"><img src="/assets/icons/call.svg" alt="전화 아이콘" /></i>
+              <span class="telNum text-black">02-336-4496</span>
+              <button class="copybtn text-lightblue/300"><i class="inline-block align-middle"><img src="/assets/icons/copy.svg" alt="복사 아이콘" /></i>복사</button>
+            </li>
+            <li class="payInfo border-b border-gray/300 px-4 py-2 text-gray/500">
+              <i class="inline-block align-middle"><img src="/assets/icons/scan.svg" alt="스캔 아이콘" /></i>
+              <span class="pay">제로페이</span>
+            </li>
+            <li class="details border-b border-gray/300 px-4 py-2 text-gray/500">
+              <i class="inline-block align-middle"><img src="/assets/icons/store.svg" alt="가게 아이콘" /></i>
+              <span>단체석, 포장, 예약, 남/녀 화장실 구분</span>
+            </li>
+            <li class="description border-b border-gray/300 px-4 py-2 text-gray/500 relative flex items-start">
+              <i class="inline-block align-middle w-3 flex-shrink-0 mt-1"><img src="/assets/icons/Group.svg" alt="메모 아이콘" /></i>
+              <p class="inline-block pl-2 overflow-hidden line-clamp-2 text-ellipsis">돼지 곱창과 소 곱창을 맛볼 수 있는 곳. 매콤한 양념에 볶
+                아져 나오는 야채곱창과 곱이 꽉 차 있는 소 곱창 구이를 
+                추천할만하다. 특히 소 곱창은 부추와 함께 구워주는데 그 맛이 가히 일품이다.</p>
+              <button class="downBtn flex-shrink-0"><img src="/assets/icons/down.svg" alt="" /></button>
+            </li>
+            <li class="editPropose border-b border-gray/300 px-4 py-2 text-gray/500">
+              <i class="inline-block align-middle"><img src="/assets/icons/pencil.svg" alt="연필 아이콘" /></i>
+              <button>정보수정 제안하기<i class="inline-block align-middle"><img src="/assets/icons/right.svg" alt="오른쪽 화살표 아이콘" /></i></button>
+            </li>
+          </ul>
+        </div>
+        <!-- //storeInfo -->
+
+        <!-- menu -->
+        <div class="menu bg-white mt-4">
+          <div class="titleArea px-4 py-3 flex justify-between border-y border-gray/300">
+            <p class="title text-base font-semibold">메뉴 <strong class="menuNum text-lightblue/300">10</strong></p>
+            <button class="text-xs text-gray/500">메뉴판 이미지로 보기</button>
+          </div>
+          <ul class="menuCardList flex flex-wrap px-4 py-3">
+            <li class="menuCardItem basis-2/4 mt-4 pr-1">
+              <figure class="border border-gray/300">
+                <img class="w-full" src="/assets/allReview/img1.png" alt="" />
+              </figure>
+              <div class="border border-gray/300 px-3 py-2">
+                <p class="menuTitle text-xs font-semibold overflow-hidden text-ellipsis">황소곱창구이(한우곱창)</p>
+                <strong class="menuPrice text-xs  text-red-500">25,000원</strong>
+              </div>
+            </li>
+            <li class="menuCardItem basis-2/4 mt-4 pl-1">
+              <figure class="border border-gray/300">
+                <img class="w-full" src="/assets/allReview/img2.png" alt="" />
+              </figure>
+              <div class="border border-gray/300 px-3 py-2">
+                <p class="menuTitle text-xs font-semibold overflow-hidden text-ellipsis">황소곱창구이(한우곱창)</p>
+                <strong class="menuPrice text-xs  text-red-500">25,000원</strong>
+              </div>
+            </li>
+            <li class="menuCardItem basis-2/4 mt-4 pr-1">
+              <figure class="border border-gray/300">
+                <img class="w-full" src="/assets/allReview/img3.png" alt="" />
+              </figure>
+              <div class="border border-gray/300 px-3 py-2">
+                <p class="menuTitle text-xs ffont-semibold overflow-hidden text-ellipsis">황소곱창구이(한우곱창)</p>
+                <strong class="menuPrice text-xs  text-red-500">25,000원</strong>
+              </div>
+            </li>
+            <li class="menuCardItem basis-2/4 mt-4 pl-1">
+              <figure class="border border-gray/300">
+                <img class="w-full" src="/assets/allReview/img4.png" alt="" />
+              </figure>
+              <div class="border border-gray/300 px-3 py-2">
+                <p class="menuTitle text-xs font-semibold overflow-hidden text-ellipsis">황소곱창구이(한우곱창)</p>
+                <strong class="menuPrice text-xs  text-red-500">25,000원</strong>
+              </div>
+            </li>
+          </ul>
+          <button class="moreBtn w-full bg-gray-50 py-3 text-gray/500 font-semibold">메뉴 더보기<i class="inline-block align-middle"><img src="/assets/icons/arrowRight.svg" alt="오른쪽 화살표 아이콘" /></i></button>
+        </div>
+        <!-- //menu -->
+
+        <!-- visitorPhoto -->
+        <div class="visitorPhoto bg-white mt-4">
+          <div class="titleArea px-4 py-3">
+            <p class="title text-base font-semibold">방문자 사진</p>
+          </div>
+          <ul class="photoList flex flex-wrap px-4 pb-3">
+            <li class="photoItem basis-1/3 box-border border border-white">
+              <a href="#">
+                <figure>
+                  <img class="w-full" src="/assets/allReview/visitor1.jpg" alt="" />
+                </figure>
+              </a>
+            </li>
+            <li class="photoItem basis-1/3 box-border border border-white">
+              <a href="#">
+                <figure>
+                  <img class="w-full" src="/assets/allReview/visitor2.jpg" alt="" />
+                </figure>
+              </a>
+            </li>
+            <li class="photoItem basis-1/3 box-border border border-white">
+              <a href="#">
+                <figure>
+                  <img class="w-full" src="/assets/allReview/visitor3.jpg" alt="" />
+                </figure>
+              </a>
+            </li>
+            <li class="photoItem basis-1/3 box-border border border-white">
+              <a href="#">
+                <figure>
+                  <img class="w-full" src="/assets/allReview/visitor3.jpg" alt="" />
+                </figure>
+              </a>
+            </li>
+            <li class="photoItem basis-1/3 box-border border border-white">
+              <a href="#">
+                <figure>
+                  <img class="w-full" src="/assets/allReview/visitor2.jpg" alt="" />
+                </figure>
+              </a>
+            </li>
+            <li class="photoItem basis-1/3 box-border border border-white">
+              <a href="#">
+                <figure>
+                  <img class="w-full" src="/assets/allReview/visitor1.jpg" alt="" />
+                </figure>
+              </a>
+            </li>
+            <li class="photoItem basis-1/3 box-border border border-white">
+              <a href="#">
+                <figure>
+                  <img class="w-full" src="/assets/allReview/visitor1.jpg" alt="" />
+                </figure>
+              </a>
+            </li>
+            <li class="photoItem basis-1/3 box-border border border-white">
+              <a href="#">
+                <figure>
+                  <img class="w-full" src="/assets/allReview/visitor2.jpg" alt="" />
+                </figure>
+              </a>
+            </li>
+            <li class="photoItem basis-1/3 box-border border border-white">
+              <a href="#">
+                <figure>
+                  <img class="w-full" src="/assets/allReview/visitor3.jpg" alt="" />
+                </figure>
+              </a>
+            </li>
+          </ul>
+          <button class="moreBtn w-full bg-gray-50 py-3 text-gray/500 font-semibold">방문자 사진 더보기<i class="inline-block align-middle"><img src="/assets/icons/arrowRight.svg" alt="오른쪽 화살표 아이콘" /></i></button>
+        </div>
+        <!-- //visitorPhoto -->
+
+        <!-- visitorReview -->
+        <div class="visitorReview px-4 py-3  bg-white mt-4">
+          <div class="titleArea flex justify-between">
+            <p class="title text-base font-semibold">방문자 리뷰 <strong class="reveiwNum text-lightblue/300">2,315</strong></p>
+            <button class="text-xs"><i class="inline-block align-middle"><img src="/assets/icons/pencil-lightblue300.svg" alt="" /></i>나도 참여</button>
+          </div>
+          <ul class="estimateList flex flex-col gap-1 mt-4">
+            <li class="estimateItem flex justify-between items-center font-semibold text-xs relative h-9">
+              <span class="graph bg-lightblue/400 rounded w-5/6 absolute h-full"></span>
+              <span class="estimWords relative z-10 pl-2">😜  “음식이 맛있어요"</span>
+              <span class="estimNum text-lightblue/300">1424</span>
+            </li>
+            <li class="estimateItem flex justify-between items-center font-semibold text-xs relative h-9">
+              <span class="graph bg-lightblue/300 rounded w-4/6 absolute h-full"></span>
+              <span class="estimWords relative z-10 pl-2">💗  “친절해요"</span>
+              <span class="estimNum text-lightblue/300">951</span>
+            </li>
+            <li class="estimateItem flex justify-between items-center font-semibold text-xs relative h-9">
+              <span class="graph bg-lightblue/200 rounded w-3/6 absolute h-full"></span>
+              <span class="estimWords relative z-10 pl-2">🌱  “재료가 신선해요"</span>
+              <span class="estimNum text-lightblue/300">607</span>
+            </li>
+            <li class="estimateItem flex justify-between items-center font-semibold text-xs relative h-9">
+              <span class="graph bg-lightblue/100 rounded w-2/6 absolute h-full"></span>
+              <span class="estimWords relative z-10 pl-2">🍚  “양이 많아요"</span>
+              <span class="estimNum text-lightblue/300">435</span>
+            </li>
+            <li class="estimateItem flex justify-between items-center font-semibold text-xs relative h-9">
+              <span class="graph bg-lightblue/100 rounded w-1/6 absolute h-full"></span>
+              <span class="estimWords relative z-10 pl-2">👀  “매장이 넓어요"</span>
+              <span class="estimNum text-lightblue/300">324</span>
+            </li>
+          </ul>
+        </div>
+        <!-- //visitorReview -->
+
+      </section>
+    </div>
+  </body>
+</html>
