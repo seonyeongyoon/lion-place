@@ -30,7 +30,7 @@ function createUserCard({
   visitDate = "",
 }) {
   const template = `
-  <li class="reviewItem mt-4 overflow-hidden rounded-2XL bg-white">
+  <li class="reviewItem mt4 overflow-hidden rounded2xl bg-white">
     <a href="/" class="flex">
       <figure>
         <img src="${image}" alt="${alt}" />
