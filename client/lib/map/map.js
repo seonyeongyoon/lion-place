@@ -1,6 +1,19 @@
-export function createMap(lat,lng){
-    const mapContainer = document.getElementById('map') // 지도를 표시할 div 
+import { getNode } from "../dom/index.js";
+import { typeError } from "../error/typeError.js";
+
+
+export function createMap(node,lat,lng){
+    if (typeof node !=='string') typeError('createMap의 첫번째 인수는 문자 타입 이어야 합니다.')
+    const mapContainer = getNode(node) // 지도를 표시할 div 
     // 마커를 표시할 위치와 title 객체 배열입니다 
+    let mapOption = { 
+            center: new kakao.maps.LatLng(lat,lng), // 지도의 중심좌표
+            level: 3 // 지도의 확대 레벨
+        }; 
+    
+    let map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+
     let positions = [
         {
             title: 'HOTMESS', 
@@ -15,15 +28,6 @@ export function createMap(lat,lng){
         },
     ];
 
-// for(let i;i<positions.length;i++){
-//     lat =
-// }
-let mapOption = { 
-        center: new kakao.maps.LatLng(lat,lng), // 지도의 중심좌표
-        level: 3 // 지도의 확대 레벨
-    }; 
-
-let map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
 
 let content = []
 for (let i = 0; i < positions.length; i ++) {
