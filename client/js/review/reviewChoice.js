@@ -41,7 +41,7 @@ function createUserCard({
         <h3 class="flex justify-between space-x-2 font-semibold">
           ${store}<i class="inline-block"
             ><img
-              src="./../../assets/icons/call.svg"
+              src="/assets/icons/call.svg"
               alt="전화기 아이콘"
           /></i>
         </h3>

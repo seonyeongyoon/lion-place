@@ -5,8 +5,8 @@
       "description": "홍대에 있는 소바중에 제일 맛있어요!!!",
       "location": "서울시 서교동",
       "visitDate": "4.1.토",
-      "image": "/assets/reviewChoice/thumbnail1.png",
-      "alt":"후타츠 홍대본점",
+      "image": "/assets/images/review/reviewChoice/thumbnail1.png",
+      "alt": "후타츠 홍대본점",
       "stock": 1
     },
     {
@@ -14,8 +14,8 @@
       "description": "피자가 도우도 얇은데 치즈가 그냥 가득하니 아주 존맛탱이었습니다.",
       "location": "제주시 구좌읍",
       "visitDate": "22.12.24.토",
-      "image": "/assets/reviewChoice/thumbnail2.png",
-      "alt":"마노아",
+      "image": "/assets/images/review/reviewChoice/thumbnail2.png",
+      "alt": "마노아",
       "stock": 2
     },
     {
@@ -23,8 +23,8 @@
       "description": "뭘해도 사진에 머리가 안담겨요ㅜㅠㅜ지짜 너무 만족했어용",
       "location": "서울시 성수동1가",
       "visitDate": "22.11.15.화",
-      "image": "/assets/reviewChoice/thumbnail3.png",
-      "alt":"온야드",
+      "image": "/assets/images/review/reviewChoice/thumbnail3.png",
+      "alt": "온야드",
       "stock": 3
     },
     {
@@ -32,8 +32,8 @@
       "description": "아메리카노 존맛탱",
       "location": "서울시 강남구 역삼동",
       "visitDate": "7.30.일",
-      "image": "/assets/reviewChoice/thumbnail4.png",
-      "alt":"스타벅스 역삼점",
+      "image": "/assets/images/review/reviewChoice/thumbnail4.png",
+      "alt": "스타벅스 역삼점",
       "stock": 4
     },
     {
@@ -41,8 +41,8 @@
       "description": "피자가 맛있어요",
       "location": "서울시 이태원",
       "visitDate": "4.1.토",
-      "image": "/assets/reviewChoice/thumbnail5.png",
-      "alt":"부자피자",
+      "image": "/assets/images/review/reviewChoice/thumbnail5.png",
+      "alt": "부자피자",
       "stock": 5
     },
     {
@@ -50,8 +50,8 @@
       "description": "홍대에 있는 소바중에 제일 맛있어요!!!",
       "location": "서울시 서교동",
       "visitDate": "4.1.토",
-      "image": "/assets/reviewChoice/thumbnail1.png",
-      "alt":"후타츠 홍대본점",
+      "image": "/assets/images/review/reviewChoice/thumbnail1.png",
+      "alt": "후타츠 홍대본점",
       "stock": 6
     },
     {
@@ -59,8 +59,8 @@
       "description": "피자가 도우도 얇은데 치즈가 그냥 가득하니 아주 존맛탱이었습니다.",
       "location": "제주시 구좌읍",
       "visitDate": "22.12.24.토",
-      "image": "/assets/reviewChoice/thumbnail2.png",
-      "alt":"마노아",
+      "image": "/assets/images/review/reviewChoice/thumbnail2.png",
+      "alt": "마노아",
       "stock": 7
     },
     {
@@ -68,8 +68,8 @@
       "description": "뭘해도 사진에 머리가 안담겨요ㅜㅠㅜ지짜 너무 만족했어용",
       "location": "서울시 성수동1가",
       "visitDate": "22.11.15.화",
-      "image": "/assets/reviewChoice/thumbnail3.png",
-      "alt":"온야드",
+      "image": "/assets/images/review/reviewChoice/thumbnail3.png",
+      "alt": "온야드",
       "stock": 8
     },
     {
@@ -77,8 +77,8 @@
       "description": "아메리카노 존맛탱",
       "location": "서울시 강남구 역삼동",
       "visitDate": "7.30.일",
-      "image": "/assets/reviewChoice/thumbnail4.png",
-      "alt":"스타벅스 역삼점",
+      "image": "/assets/images/review/reviewChoice/thumbnail4.png",
+      "alt": "스타벅스 역삼점",
       "stock": 9
     },
     {
@@ -86,8 +86,8 @@
       "description": "피자가 맛있어요",
       "location": "서울시 이태원",
       "visitDate": "4.1.토",
-      "image": "/assets/reviewChoice/thumbnail5.png",
-      "alt":"부자피자",
+      "image": "/assets/images/review/reviewChoice/thumbnail5.png",
+      "alt": "부자피자",
       "stock": 10
     }
   ]
