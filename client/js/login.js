@@ -19,6 +19,14 @@ const checkF = (e) => {
   }
 };
 
+function check(from) {
+  if (from.userid.value == "energizo" && from.password.value == "1234") {
+    window.open("/lion-place/client/login/02.login.html");
+  } else {
+    alert("Error UserID or Password");
+  }
+}
+
 loginTable.addEventListener("keyup", checkF);
 //joinform_check 함수로 유효성 검사
 // function addEventListener() {
