@@ -18,12 +18,12 @@ export function createMap(node,lat,lng){
         {
             title: 'HOTMESS', 
             latlng: new kakao.maps.LatLng(37.562489614978645,126.9227830443036),
-            img:"/assets/images/Image-field-feed.png"
+            img:"/assets/images/map/Image-field-feed.png"
         },
         {
             title: '홍대디디치', 
             latlng: new kakao.maps.LatLng(37.561763177568395,126.92106624376268),
-            img:"/assets/images/Image-field-feed.png"
+            img:"/assets/images/map/Image-field-feed.png"
     
         },
     ];
