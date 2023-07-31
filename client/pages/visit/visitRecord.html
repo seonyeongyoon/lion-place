@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+      type="image/xml+svg"
+    />
+    <link rel="stylesheet" href="/css/main.css" />
+    <script src="/js/main.js" type="module"></script>
+    <title>project</title>
+  </head>
+  <body class="font-pretendard">
+    <div class="mx-auto min-w-[320px] max-w-[599px]">
+      <!-- ^pb-24 -->
+      <header class="pb-[24px]">
+        <!-- 최상단 통신상태 및 시간표시 -->
+        <div
+          class="fixed top-0 z-50 flex w-full max-w-[599px] items-center bg-white px-[18px] py-2"
+        >
+          <time datetime="2023-07-28T03:15" class="font-semibold">3:15</time>
+          <div class="flex-grow">
+            <img
+              src="/assets/icons/position.svg"
+              alt=""
+              class="pl-1"
+              aria-hidden="true"
+            />
+          </div>
+          <img src="/assets/icons/battery.svg" alt="" aria-hidden="true" />
+          <span class="px-1 text-xs font-bold" aria-hidden="true">LTE</span>
+          <img src="/assets/icons/4g.svg" alt="" aria-hidden="true" />
+        </div>
+      </header>
+
+      <!-- !profile -->
+      <!-- 전체 프로필 컨테이너 -->
+      <section
+        class="h-[10.125rem] bg-primary pb-[1.375rem] pl-[1.375rem] pr-[1.375rem] pt-9"
+      >
+        <!-- 프로필 영역 -->
+        <div class="flex flex-col">
+          <!-- #쿠폰 -->
+          <div class="flex justify-end">
+            <button class="relative">
+              <span
+                class="h-3 w-[22px] rounded-md border border-white p-1 text-xs font-light text-white"
+                >쿠폰</span
+              >
+              <span
+                class="absolute right-[-3px] top-[-3px] box-content flex h-1 w-1 items-center justify-center rounded-full bg-white p-1"
+              >
+                <span class="text-xs font-light text-primary">1</span>
+              </span>
+            </button>
+          </div>
+          <!-- 이미지 + 계정 정보 컨테이너 -->
+          <div class="grid place-self-center">
+            <!-- #프로필 이미지 -->
+            <div class="relative pr-[1.1875rem]">
+              <div
+                class="flex h-[56.3px] w-[56.3px] items-center justify-center rounded-full bg-white"
+              >
+                <div
+                  class="relative h-[3rem] w-[3rem] self-center rounded-full bg-primary"
+                >
+                  <a
+                    class="flex h-[3rem] w-[3rem] items-center justify-center"
+                    href="/"
+                  >
+                    <span class="text-xs font-bold text-white">img</span>
+                  </a>
+                </div>
+              </div>
+              <!-- 프로필 edit 아이콘 -->
+              <div
+                class="absolute bottom-3 right-5 flex h-5 w-5 items-center rounded-full bg-white p-1"
+              >
+                <img src="/assets/icons/swiper/pencil1.svg" alt="연필 아이콘" />
+              </div>
+            </div>
+            <!-- 계정이름 + 리뷰 사진 팔로잉 팔로워 -->
+            <div
+              class="col-start-2 col-end-3 row-start-1 row-end-2 h-[69px] w-[188px]"
+            >
+              <!-- #계정 이름 -->
+              <div class="flex">
+                <h3 class="w-[81px] font-bold text-white">COOLION</h3>
+                <img
+                  src="./../../assets/icons/swiper/share.svg"
+                  alt="쉐어 아이콘"
+                />
+              </div>
+              <!-- #리스트 영역 -->
+              <!-- 리뷰 -->
+              <div class="flex justify-between gap-2">
+                <a
+                  class="flex flex-col items-center gap-x-3.5 text-xs text-white"
+                  href="/"
+                >
+                  <span>리뷰</span>
+                  <span><strong>17</strong></span>
+                </a>
+                <!-- <span aria-hidden="true">|</span> -->
+                <!-- 사진 -->
+                <a
+                  class="flex flex-col items-center gap-x-3.5 text-xs text-white"
+                  href="/"
+                >
+                  <span>사진</span>
+                  <span><strong>19</strong></span>
+                </a>
+                <!-- <span aria-hidden="true">|</span> -->
+                <!-- 팔로잉 -->
+                <a
+                  class="flex flex-col items-center text-xs text-white"
+                  href="/"
+                >
+                  <span>팔로잉</span>
+                  <span><strong>0</strong></span>
+                </a>
+                <!-- <span aria-hidden="true">|</span> -->
+                <!-- 팔로워 -->
+                <a
+                  class="flex flex-col items-center text-xs text-white"
+                  href="/"
+                >
+                  <span>팔로워</span>
+                  <span><strong>2</strong></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- #버튼 영역 -->
+          <div
+            class="flex h-[30px] w-[17.1875rem] gap-[0.3125rem] self-center pt-2"
+          >
+            <button
+              class="box-content flex h-[1.125rem] w-[4.6875rem] items-center justify-center rounded-md bg-lightBlue800 px-[3.5rem] py-1.5"
+            >
+              <img src="/assets/icons/swiper/pencil2.svg" alt="연필 아이콘" />
+              <span class="text-xs text-white">text</span>
+            </button>
+            <button
+              class="box-content flex h-[1.125rem] w-[2.9375rem] items-center justify-center rounded-md bg-lightBlue800 px-[1.125rem] py-1.5"
+            >
+              <img src="/assets/icons/swiper/mission.svg" alt="인증 아이콘" />
+              <span class="text-xs text-white">text</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- #nav -->
+      <nav
+        class="mx-auto box-content flex h-10 min-w-[320px] max-w-[599px] justify-around bg-primary pt-2"
+      >
+        <button class="box-content w-[4.375rem] font-bold text-gray/300">
+          피드
+        </button>
+        <button
+          class="relative box-content w-[4.375rem] font-bold text-lightblue/300"
+        >
+          방문
+          <span
+            class="absolute bottom-0 box-content h-0.5 w-[4.375rem] min-w-full bg-lightblue/300"
+          ></span>
+        </button>
+        <button class="box-content w-[4.375rem] font-bold text-gray/300">
+          리뷰
+        </button>
+        <button
+          class="box-content w-[4.375rem] p-1 text-base font-bold text-gray/300"
+        >
+          예약•주문
+        </button>
+      </nav>
+
+      <!-- !main -->
+      <main>
+        <ul
+          class="min-h-[692px] w-full max-w-[599px] flex-col items-start justify-start gap-3 bg-gray/100 px-3 py-[24px]"
+        >
+          <!-- #3월 방문 -->
+          <!-- 테마 타이틀 -->
+          <li class="justify-center gap-1 p-1">
+            <div class="text-base font-semibold leading-normal text-black">
+              3월 방문
+            </div>
+            <!-- 리뷰 -->
+            <div class="my-4 w-full max-w-[599px] rounded-md bg-white p-3">
+              <div class="relative mb-1 flex h-[24px] items-center">
+                <span class="mr-1 font-semibold">비건 베이커리 구떼</span>
+                <span class="text-xs font-light text-gray/300"
+                  >3.8.수•1번째 방문</span
+                >
+                <div class="absolute right-0 flex">
+                  <img
+                    src="./../../assets/icons/swiper/heart.svg"
+                    alt="하트 아이콘"
+                  />
+                  <img
+                    src="/assets/icons/swiper/more.svg"
+                    alt="더보기 아이콘"
+                  />
+                </div>
+              </div>
+              <div class="flex gap-3">
+                <div
+                  class="inline-flex flex-col items-start justify-center gap-1"
+                >
+                  <span class="text-xs font-normal leading-tight text-gray-500"
+                    >진짜 맨날 근처오면 와서 4-5개씩은 사가는 곳입니다.
+                    비건디저트 특유의 향이 안나서 더 좋아요!
+                  </span>
+                  <div class="flex flex-row gap-[2px]">
+                    <span
+                      class="rounded-sm bg-gray/50 px-2 text-xs text-gray/500"
+                      ><span class="mr-1">✨</span>매장이 청결해요</span
+                    >
+                    <span
+                      class="rounded-sm bg-gray/50 px-2 text-xs text-gray/500"
+                      ><span class="mr-1">✨</span>+2</span
+                    >
+                  </div>
+                </div>
+                <img
+                  class="flex h-[72px] w-20 items-center justify-center gap-1 rounded-[3px]"
+                  src="/assets/images/ImagefieldFeed1.png"
+                  alt="/"
+                />
+              </div>
+              <span class="text-xs font-normal text-gray/300"
+                >파운드 외 2 • 12,300원</span
+              >
+            </div>
+          </li>
+          <!-- #2월 방문 -->
+          <!-- 테마 타이틀 -->
+          <li class="justify-center gap-1 p-1">
+            <div class="text-base font-semibold leading-normal text-black">
+              2월 방문
+            </div>
+            <!-- 리뷰 -->
+            <div class="my-4 w-full max-w-[599px] rounded-md bg-white p-3">
+              <div class="relative mb-1 flex h-[24px] items-center">
+                <span class="mr-1 font-semibold">비건 베이커리 구떼</span>
+                <span class="text-xs font-light text-gray/300"
+                  >3.8.수•1번째 방문</span
+                >
+                <div class="absolute right-0 flex">
+                  <img
+                    src="./../../assets/icons/swiper/heart.svg"
+                    alt="하트 아이콘"
+                  />
+                  <img
+                    src="/assets/icons/swiper/more.svg"
+                    alt="더보기 아이콘"
+                  />
+                </div>
+              </div>
+              <span class="text-xs font-normal text-gray/300"
+                >파운드 외 2 • 12,300원</span
+              >
+              <button
+                class="mt-1 flex h-[30px] w-full max-w-[599px] items-center justify-center rounded-md bg-lightBlue800 px-[96px] py-4"
+              >
+                <img src="/assets/icons/swiper/pencil2.svg" alt="연필 아이콘" />
+                <span class="text-xs text-white">text</span>
+              </button>
+            </div>
+          </li>
+        </ul>
+      </main>
+
+      <!-- !nav -->
+      <nav
+        class="fixed bottom-0 z-50 w-full max-w-[599px] bg-white px-[17px] pb-[10px]"
+      >
+        <!-- 공통내비 -->
+        <h2 class="sr-only">메인 메뉴</h2>
+        <ul class="flex justify-between">
+          <li class="self-end">
+            <a
+              href="/"
+              class="mr-[8px] flex flex-col items-center justify-center px-3 py-2"
+            >
+              <img
+                src="/assets/icons/map.svg"
+                alt=""
+                aria-hidden="true"
+                class="w-[22px]"
+              />
+              <span class="text-xs tracking-tighter">지도</span>
+            </a>
+          </li>
+          <li class="self-end">
+            <a href="/" class="mr-[2px] flex flex-col items-center px-3 py-2">
+              <img
+                src="/assets/icons/save.svg"
+                alt=""
+                aria-hidden="true"
+                class="w-[22px]"
+              />
+              <span class="mt-[2px] text-xs tracking-tighter">저장</span>
+            </a>
+          </li>
+          <li class="self-end">
+            <a
+              href="/"
+              class="flex flex-col items-center justify-center px-3 py-2"
+            >
+              <img
+                src="/assets/icons/subway.svg"
+                alt=""
+                aria-hidden="true"
+                class="w-6"
+              />
+              <span class="mt-[2px] text-xs tracking-tighter">대중교통</span>
+            </a>
+          </li>
+          <li class="self-end">
+            <a
+              href="/"
+              class="flex flex-col items-center justify-center px-3 py-2"
+            >
+              <img
+                src="/assets/icons/car.svg"
+                alt=""
+                aria-hidden="true"
+                class="w-7"
+              />
+              <span class="text-xs tracking-tighter">내비게이션</span>
+            </a>
+          </li>
+          <li class="self-end">
+            <a
+              href="/"
+              class="flex flex-col items-center justify-center px-3 py-2"
+            >
+              <img
+                src="/assets/icons/my.svg"
+                alt=""
+                aria-hidden="true"
+                class="w-6"
+              />
+              <span class="mt-[1px] text-xs tracking-tighter">MY</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+</html>
