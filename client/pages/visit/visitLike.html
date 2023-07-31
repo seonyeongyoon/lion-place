@@ -9,11 +9,24 @@
       href="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
       type="image/xml+svg"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
     <link rel="stylesheet" href="/css/main.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="/js/main.js" type="module"></script>
+
+    <script src="/js/swiper.js" type="module"></script>
+
     <title>project</title>
   </head>
+
   <body class="font-pretendard">
+    <!-- 전체 콘텐츠 -->
     <div class="mx-auto min-w-[320px] max-w-[599px]">
       <header class="box-content pb-10">
         <!-- 최상단 통신상태 및 시간표시 -->
@@ -97,10 +110,11 @@
             </dl>
           </div>
           <!-- #키워드 -->
-          <div class="relative block overflow-hidden">
-            <div class="flex overflow-hidden">
+          <!-- ****************************swiper 영역******************************* -->
+          <div class="swiper">
+            <div class="swiper-wrapper pb-[32px]">
               <!-- ^line1 -->
-              <div class="box-content block h-[260px] w-[320px] px-5">
+              <div class="swiper-slide relative mt-1 block">
                 <!-- keyword1 -->
                 <button
                   type="button"
@@ -154,11 +168,10 @@
                     >트렌디해요</span
                   >
                 </button>
-
                 <!-- down arrow -->
                 <div class="flex justify-center">
                   <button
-                    class="left-[3.1875rem] top-[2.875rem] flex h-9 w-9 items-center justify-center rounded-full bg-white drop-shadow-[0_4px_4px_rgba(0,0,0,0.15)]"
+                    class="flex h-9 w-9 items-center justify-center rounded-full bg-white drop-shadow-[0_4px_4px_rgba(0,0,0,0.15)]"
                   >
                     <img
                       src="/assets/icons/gray_arrow_down.svg"
@@ -169,7 +182,7 @@
               </div>
 
               <!-- ^line2 -->
-              <div class="box-content block h-[260px] w-[320px] px-5">
+              <div class="swiper-slide relative mt-1 block flex-col">
                 <!-- keyword1 -->
                 <button
                   type="button"
@@ -237,7 +250,7 @@
               </div>
 
               <!-- ^line3 -->
-              <div class="box-content block h-[260px] w-[320px] px-5">
+              <div class="swiper-slide relative mt-1 block flex-col">
                 <!-- keyword1 -->
                 <button
                   type="button"
@@ -255,7 +268,8 @@
                   class="mb-2 flex content-center items-center rounded-[4px] bg-primary px-5 py-2.5 drop-shadow-lg"
                 >
                   <img src="/assets/icons/hands.svg" alt="두 손 이모티콘" />
-                  <span class="ml-1 text-sm font-normal text-white"
+                  <span
+                    class="ml-1 whitespace-nowrap text-sm font-normal text-white"
                     >손이 빨라요</span
                   >
                 </button>
@@ -299,7 +313,9 @@
               </div>
 
               <!-- ^line4 -->
-              <div class="box-content block h-[260px] w-[320px] px-5">
+              <div
+                class="swiper-slide relative mt-1 block h-[224px] w-[162px] flex-col"
+              >
                 <!-- keyword1 -->
                 <button
                   type="button"
@@ -496,5 +512,6 @@
         </ul>
       </nav>
     </div>
+    <!-- 전체 콘텐츠 끝 -->
   </body>
 </html>
