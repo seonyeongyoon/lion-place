@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>lion-place</title>
     <link
       rel="stylesheet preload"
       as="style"
@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="/css/main.css" />
   </head>
   <body class="font-pretendard">
-    <div class="mx-auto min-w-[320px] max-w-[599px]">
+    <h1 class="sr-only">lion-place</h1>
+    <div class="relative mx-auto min-w-[320px] max-w-[599px]">
       <header>
         <!-- 최상단 통신상태 및 시간표시 -->
         <div
@@ -33,16 +34,16 @@
           <img src="/assets/icons/4g.svg" alt="" aria-hidden="true" />
         </div>
       </header>
-      <!-- 공통내비 -->
       <nav
         class="fixed bottom-0 z-50 w-full max-w-[599px] bg-white px-[17px] pb-[10px]"
       >
+        <!-- 공통내비 -->
         <h2 class="sr-only">메인 메뉴</h2>
         <ul class="flex justify-between">
           <li class="self-end">
             <a
               href="/"
-              class="mr-2 flex flex-col items-center justify-center px-3 py-2"
+              class="mr-[8px] flex flex-col items-center justify-center px-3 py-2"
             >
               <img
                 src="/assets/icons/map.svg"
@@ -50,18 +51,18 @@
                 aria-hidden="true"
                 class="w-[22px]"
               />
-              <span class="text-xs">지도</span>
+              <span class="text-xs tracking-tighter">지도</span>
             </a>
           </li>
           <li class="self-end">
-            <a href="/" class="mr-[10px] flex flex-col items-center px-3 py-2">
+            <a href="/" class="mr-[2px] flex flex-col items-center px-3 py-2">
               <img
                 src="/assets/icons/save.svg"
                 alt=""
                 aria-hidden="true"
                 class="w-[22px]"
               />
-              <span class="mt-[2px] text-xs">저장</span>
+              <span class="mt-[2px] text-xs tracking-tighter">저장</span>
             </a>
           </li>
           <li class="self-end">
@@ -75,7 +76,7 @@
                 aria-hidden="true"
                 class="w-6"
               />
-              <span class="mt-[2px] text-xs">대중교통</span>
+              <span class="mt-[2px] text-xs tracking-tighter">대중교통</span>
             </a>
           </li>
           <li class="self-end">
@@ -89,7 +90,7 @@
                 aria-hidden="true"
                 class="w-7"
               />
-              <span class="text-xs">내비게이션</span>
+              <span class="text-xs tracking-tighter">내비게이션</span>
             </a>
           </li>
           <li class="self-end">
@@ -103,12 +104,253 @@
                 aria-hidden="true"
                 class="w-6"
               />
-              <span class="mt-[1px] text-xs">MY</span>
+              <span class="mt-[1px] text-xs tracking-tighter">MY</span>
             </a>
           </li>
         </ul>
       </nav>
-      <main></main>
+      <main>
+        <h2 class="sr-only">리뷰페이지</h2>
+        <!-- 메인헤더 -->
+        <header class="relative block w-full bg-purple-300">
+          <img
+            src="/assets/images/map/review-post.png"
+            alt="벛꽃 풍경"
+            class="mt-12 w-full"
+          />
+          <h3 class="sr-only">카테고리 썸네일</h3>
+          <div class="flex items-center">
+            <a href="/" class="z-10">
+              <img
+                src="/assets/icons/left-white.svg"
+                alt="뒤로가기"
+                class="absolute left-2 top-2 h-[30px] w-[30px]"
+              />
+            </a>
+            <a
+              href="/themeEnroll2.html"
+              class="absolute right-2 top-2 flex rounded-3xl bg-secondary px-3 py-2 font-semibold"
+            >
+              <img src="/assets/icons/check.svg" alt="" aria-hidden="true" />
+              <span class="text-white">등록</span>
+            </a>
+          </div>
+          <p class="absolute left-4 top-[66px] text-[28px] text-white">
+            연남/합정 데이트
+          </p>
+          <p class="absolute right-[21px] top-[111px]">
+            <span class="text-white">9</span>
+            <span class="text-gray-400">/20</span>
+          </p>
+          <p class="absolute left-4 top-[142.5px] text-white">
+            데이트 코스 모음
+          </p>
+          <p class="absolute right-[21px] top-[175px]">
+            <span class="text-white">9</span>
+            <span class="text-gray-400">/100</span>
+          </p>
+          <button
+            class="absolute bottom-[31px] left-[50%] flex -translate-x-1/2 rounded-full border border-solid bg-transparent px-3 py-2"
+          >
+            <img src="/assets/icons/photo.svg" alt="" aria-hidden="true" />
+            <span class="mx-1 text-base font-semibold text-white"
+              >커버변경</span
+            >
+            <span class="self-end text-xs text-white">필수</span>
+          </button>
+          <button class="absolute -bottom-2 left-[50%]">
+            <img src="/assets/icons/close.svg" alt="창닫기" />
+          </button>
+        </header>
+        <!-- 리뷰 페이지 -->
+        <section
+          class="mx-auto h-screen w-full rounded-t-3xl bg-no-repeat px-4 py-3"
+        >
+          <div class="mx-auto flex items-center">
+            <!-- 리뷰 정보 -->
+            <h3 class="flex-grow text-sm font-bold">
+              리뷰
+              <span class="text-orange-500">2</span
+              ><span class="text-gray-300">/10</span>
+            </h3>
+            <!-- 리뷰 수정 버튼 -->
+            <ul class="flex text-xs text-gray-500">
+              <li>
+                <button type="button">임시저장&nbsp;|&nbsp;</button>
+              </li>
+              <li>
+                <button type="button">순서변경&nbsp;|&nbsp;</button>
+              </li>
+              <li>
+                <button type="button">전체삭제</button>
+              </li>
+            </ul>
+          </div>
+          <!-- 리뷰 내용 -->
+          <ol>
+            <li class="h-[50rem]">
+              <!-- no.부분 -->
+              <div class="flex">
+                <span class="my-3 rounded-3xl bg-secondary p-2">
+                  <img
+                    src="/assets/icons/paper.svg"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                </span>
+                <span
+                  class="ml-1 inline-block flex-grow self-center font-semibold text-secondary"
+                  >NO.1</span
+                >
+              </div>
+              <!-- 본문 -->
+              <!-- 이미지 포함 div -->
+              <div class="relative mx-auto">
+                <img
+                  src="/assets/images/map/Image-field-feed.png"
+                  alt="커피"
+                  class="w-full"
+                />
+                <div>
+                  <!-- 이미지 제외 div -->
+                  <div
+                    class="w-full shadow-[0px_6px_7px_0px_rgba(126,39,39,0.25)]"
+                  >
+                    <!-- 리뷰 내용 -->
+                    <div class="bg-white px-[38px] py-6">
+                      <p class="text-center text-xs text-secondary">
+                        <span class="font-medium">22.11.4.금</span>
+                        <span
+                          class="inline-block rounded-md border border-solid border-secondary px-1"
+                          >방문</span
+                        >
+                      </p>
+                      <p
+                        class="mt-2 line-clamp-3 h-[50px] w-full text-ellipsis break-all text-xs"
+                      >
+                        지나가다 보고 너무 예뻐서 저장해 놓았다가 이번에 가게
+                        되었는데 너무 예쁘고 좋았어요. 분위기도 힙하고 새로
+                        생겼는데 오래 동안 오픈 하시더라구요! 그래서 더
+                        좋았어요!
+                      </p>
+                      <div class="mx-auto mt-2 text-center text-xs">
+                        <span class="rounded-md bg-gray-100 p-1 text-gray-500"
+                          >⏱ 수업 시간이 충분해요
+                        </span>
+                        <span
+                          class="mx-2 rounded-md bg-gray-100 px-2 py-1 text-gray-500"
+                        >
+                          +4
+                        </span>
+                        <button>
+                          <img
+                            src="/assets/icons/close-theme.svg"
+                            alt="닫기"
+                            class="absolute -right-1.5 -top-1.5"
+                          />
+                        </button>
+                      </div>
+                    </div>
+                    <!-- 가게 리뷰 정보 -->
+                    <div class="ml-2 border-t border-dashed py-3 pl-3">
+                      <p class="text-base font-bold">HOT MESS</p>
+                      <p class="text-xs text-gray-500">
+                        <span>리뷰</span
+                        ><span class="font-semibold"> 5&nbsp;|&nbsp;</span
+                        ><span>서울시 연남동</span>
+                      </p>
+                    </div>
+                  </div>
+                  <!-- 핑킹가위 디자인 -->
+                  <div
+                    class="-mt-[1px] mb-20 bg-[url('/assets/icons/triangle.svg')] bg-top bg-repeat-x p-2"
+                  ></div>
+                </div>
+              </div>
+            </li>
+            <li class="h-[50rem]">
+              <!-- no.부분 -->
+              <div class="flex">
+                <span class="my-3 rounded-3xl bg-secondary p-2">
+                  <img
+                    src="/assets/icons/paper.svg"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                </span>
+                <span
+                  class="ml-1 inline-block flex-grow self-center font-semibold text-secondary"
+                  >NO.2</span
+                >
+              </div>
+              <!-- 본문 -->
+              <!-- 이미지 포함 div -->
+              <div class="relative mx-auto">
+                <img
+                  src="/assets/images/map/Image-field-feed.png"
+                  alt="커피"
+                  class="w-full"
+                />
+                <div>
+                  <!-- 이미지 제외 div -->
+                  <div
+                    class="w-full shadow-[0px_6px_7px_0px_rgba(126,39,39,0.25)]"
+                  >
+                    <!-- 리뷰 내용 -->
+                    <div class="bg-white px-[38px] py-6">
+                      <p class="text-center text-xs text-secondary">
+                        <span class="font-medium">22.11.4.금</span>
+                        <span
+                          class="inline-block rounded-md border border-solid border-secondary px-1"
+                          >방문</span
+                        >
+                      </p>
+                      <p
+                        class="mt-2 line-clamp-3 h-[50px] w-full text-ellipsis break-all text-xs"
+                      >
+                        지나가다 보고 너무 예뻐서 저장해 놓았다가 이번에 가게
+                        되었는데 너무 예쁘고 좋았어요. 분위기도 힙하고 새로
+                        생겼는데 오래 동안 오픈 하시더라구요! 그래서 더
+                        좋았어요!
+                      </p>
+                      <div class="mx-auto mt-2 text-center text-xs">
+                        <span class="rounded-md bg-gray-100 p-1 text-gray-500"
+                          >⏱ 수업 시간이 충분해요
+                        </span>
+                        <span
+                          class="mx-2 rounded-md bg-gray-100 px-2 py-1 text-gray-500"
+                        >
+                          +4
+                        </span>
+                        <button>
+                          <img
+                            src="/assets/icons/close-theme.svg"
+                            alt="닫기"
+                            class="absolute -right-1.5 -top-1.5"
+                          />
+                        </button>
+                      </div>
+                    </div>
+                    <!-- 가게 리뷰 정보 -->
+                    <div class="ml-2 border-t border-dashed py-3 pl-3">
+                      <p class="text-base font-bold">HOT MESS</p>
+                      <p class="text-xs text-gray-500">
+                        <span>리뷰</span
+                        ><span class="font-semibold"> 5&nbsp;|&nbsp;</span
+                        ><span>서울시 연남동</span>
+                      </p>
+                    </div>
+                  </div>
+                  <!-- 핑킹가위 디자인 -->
+                  <div
+                    class="-mt-[1px] mb-20 bg-[url('/assets/icons/triangle.svg')] bg-top bg-repeat-x p-2"
+                  ></div>
+                </div>
+              </div>
+            </li>
+          </ol>
+        </section>
+      </main>
     </div>
   </body>
 </html>
