@@ -1,12 +1,11 @@
-import { getNode, getNodes } from "./../lib/dom/getNode.js";
+import { getNode, getNodes } from "../../lib/dom/getNode.js";
 
-// slider 사이즈 설정
-const swiperContainer = getNode(".swiper");
+// const swiperContainer = getNode(".swiper");
+const swiperWrapper = getNode(".swiper-wrapper");
 const swiperSlide = getNodes(".swiper-slide");
 
 const swiper = new Swiper(".swiper", {
-  slidesPerView: 3,
-  spaceBetween: 10,
+  slidesPerView: 2,
   freeMode: true,
   // sticky: false,
   breakpoints: {
@@ -39,8 +38,13 @@ const swiper = new Swiper(".swiper", {
       slidesPerView: 1.3,
     },
   },
-  updateOnWindowResize: true,
   setWrapperSize: true,
 });
 
-// swiperSlide.style.width = "200px";
+swiperSlide.forEach((element) => {
+  element.style.marginRight = "0";
+});
+function setWrapperMargin() {
+  swiperWrapper.style.marginRight = "0";
+  swiperWrapper.style.paddingRight = "0";
+}
