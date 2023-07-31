@@ -6,7 +6,7 @@
       "location": "서울시 서교동",
       "visitDate": "4.1.토",
       "image": "/assets/reviewChoice/thumbnail1.png",
-      "alt":"후타츠 홍대본점",
+      "alt": "후타츠 홍대본점",
       "stock": 1
     },
     {
@@ -15,7 +15,7 @@
       "location": "제주시 구좌읍",
       "visitDate": "22.12.24.토",
       "image": "/assets/reviewChoice/thumbnail2.png",
-      "alt":"마노아",
+      "alt": "마노아",
       "stock": 2
     },
     {
@@ -24,7 +24,7 @@
       "location": "서울시 성수동1가",
       "visitDate": "22.11.15.화",
       "image": "/assets/reviewChoice/thumbnail3.png",
-      "alt":"온야드",
+      "alt": "온야드",
       "stock": 3
     },
     {
@@ -33,7 +33,7 @@
       "location": "서울시 강남구 역삼동",
       "visitDate": "7.30.일",
       "image": "/assets/reviewChoice/thumbnail4.png",
-      "alt":"스타벅스 역삼점",
+      "alt": "스타벅스 역삼점",
       "stock": 4
     },
     {
@@ -42,7 +42,7 @@
       "location": "서울시 이태원",
       "visitDate": "4.1.토",
       "image": "/assets/reviewChoice/thumbnail5.png",
-      "alt":"부자피자",
+      "alt": "부자피자",
       "stock": 5
     },
     {
@@ -51,7 +51,7 @@
       "location": "서울시 서교동",
       "visitDate": "4.1.토",
       "image": "/assets/reviewChoice/thumbnail1.png",
-      "alt":"후타츠 홍대본점",
+      "alt": "후타츠 홍대본점",
       "stock": 6
     },
     {
@@ -60,7 +60,7 @@
       "location": "제주시 구좌읍",
       "visitDate": "22.12.24.토",
       "image": "/assets/reviewChoice/thumbnail2.png",
-      "alt":"마노아",
+      "alt": "마노아",
       "stock": 7
     },
     {
@@ -69,7 +69,7 @@
       "location": "서울시 성수동1가",
       "visitDate": "22.11.15.화",
       "image": "/assets/reviewChoice/thumbnail3.png",
-      "alt":"온야드",
+      "alt": "온야드",
       "stock": 8
     },
     {
@@ -78,7 +78,7 @@
       "location": "서울시 강남구 역삼동",
       "visitDate": "7.30.일",
       "image": "/assets/reviewChoice/thumbnail4.png",
-      "alt":"스타벅스 역삼점",
+      "alt": "스타벅스 역삼점",
       "stock": 9
     },
     {
@@ -87,7 +87,7 @@
       "location": "서울시 이태원",
       "visitDate": "4.1.토",
       "image": "/assets/reviewChoice/thumbnail5.png",
-      "alt":"부자피자",
+      "alt": "부자피자",
       "stock": 10
     }
   ]
