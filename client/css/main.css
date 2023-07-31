@@ -768,15 +768,3 @@ video {
   outline: 2px solid transparent;
   outline-offset: 2px;
 }
-
-@media (prefers-color-scheme: dark) {
-  .dark\:bg-lightblue\/900 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(23 31 49 / var(--tw-bg-opacity));
-  }
-
-  .dark\:text-white {
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255 / var(--tw-text-opacity));
-  }
-}
