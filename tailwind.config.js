@@ -5,6 +5,8 @@ module.exports = {
     extend: {
       fontFamily: {
         pretendard: ["Pretendard"],
+      fontFamily: {
+        pretendard: ["Pretendard"],
       },
       colors: {
         primary: "#171f31",
