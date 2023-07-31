@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lion-Place</title>
+    <link
+      rel="stylesheet preload"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard-dynamic-subset.css"
+    />
+    <link rel="stylesheet" href="/css/main.css" />
+    <script
+      type="text/javascript"
+      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=25319638cf6e1239fa6f8c8fa0ce21df"
+    ></script>
+    <script src="/js/map/reviewMap.js" type="module"></script>
+  </head>
+  <body class="font-pretendard">
+    <div class="mx-auto min-w-[320px] max-w-[599px]" id="reviewMap">
+      <h1 class="sr-only">Lion Place</h1>
+      <header class="relative">
+        <!-- 최상단 통신상태 및 시간표시 -->
+        <div
+          class="fixed top-0 z-50 flex w-full max-w-[599px] items-center bg-white px-[18px] py-2"
+        >
+          <time datetime="2023-07-28T03:15" class="font-semibold">3:15</time>
+          <div class="flex-grow">
+            <img
+              src="/assets/icons/position.svg"
+              alt=""
+              class="pl-1"
+              aria-hidden="true"
+            />
+          </div>
+          <img src="/assets/icons/battery.svg" alt="" aria-hidden="true" />
+          <span class="px-1 text-xs font-bold" aria-hidden="true">LTE</span>
+          <img src="/assets/icons/4g.svg" alt="" aria-hidden="true" />
+        </div>
+        <!-- 상세이미지 -->
+        <div id="reviewMap" class="mx-4 h-[400px]"></div>
+        <div class="flex gap-2">
+          <img
+            src="/assets/images/review-map-image-2.png"
+            alt="상품이미지"
+            class="h-32 w-32"
+          />
+          <img
+            src="/assets/images/review-map-image-1.png"
+            alt="상품이미지"
+            class="h-32 w-32"
+          />
+        </div>
+        <!-- 매장정보 -->
+        <section class="mt-4">
+          <h2 class="sr-only">매장 정보</h2>
+          <p class="text-center">
+            <span class="text-base font-semibold mr-2">마포곱창타운 연남점</span><span class="text-xs text-gray/300">곱창,막창,양</span>
+          </p>
+          <div class="flex items-center gap-2 justify-center">
+            <div class="flex text-base font-semibold">
+              <img src="/assets/icons/heart.svg" alt="" />
+              <span>4.47</span><span class="text-gray/300">/5</span>
+            </div>
+            <p class="text-xs text-primary text-center">방문자리뷰 2,229 &middot; 블로그리뷰 1,063</p>
+          </div>
+          <p class="text-center text-xs font-semibold text-gray/600">클레버티비 교육받는 사이 다녀온 마포홍대 곱창</p>
+        </section>
+        <div>
+          <!-- 네비게이션 연결 버튼 -->
+          <div class="flex justify-center gap-2 p-2">
+            <a
+              href="#"
+              class="flex items-center gap-1 rounded-3xl border border-solid border-primary bg-white px-[18px] py-[6px]"
+            >
+              <img
+                src="/assets/icons/start-black.svg"
+                alt=""
+                aria-hidden="true"
+              />
+              <span>출발</span>
+            </a>
+            <a
+              href="#"
+              class="flex items-center gap-1 rounded-3xl bg-primary px-[18px] py-[6px] text-white"
+            >
+              <img
+                src="/assets/icons/map-white.svg"
+                alt=""
+                aria-hidden="true"
+                class="h-[18px] w-[18px]"
+              />
+              <span>도착</span>
+            </a>
+          </div>
+        </div>
+      </header>
+      <!-- 네비게이션 -->
+      <nav class="z-50 w-full max-w-[599px] bg-white px-[17px] pb-[10px]">
+        <!-- 공통내비 -->
+        <h2 class="sr-only">메인 메뉴</h2>
+        <ul class="flex justify-evenly">
+          <li class="self-end">
+            <a
+              href="/"
+              class="flex flex-col items-center justify-center px-3 py-2"
+            >
+              <img
+                src="/assets/icons/call.svg"
+                alt=""
+                aria-hidden="true"
+                class="w-6"
+              />
+              <span class="text-xs tracking-tighter">전화</span>
+            </a>
+          </li>
+          <li class="self-end">
+            <a href="/" class="flex flex-col items-center px-3 py-2">
+              <img
+                src="/assets/icons/save-small.svg"
+                alt=""
+                aria-hidden="true"
+                class="w-6"
+              />
+              <span class="text-xs tracking-tighter">저장</span>
+            </a>
+          </li>
+          <li class="self-end">
+            <a
+              href="/"
+              class="flex flex-col items-center justify-center px-3 py-2"
+            >
+              <img
+                src="/assets/icons/car-small.svg"
+                alt=""
+                aria-hidden="true"
+                class="w-6"
+              />
+              <span class="text-xs tracking-tighter">내비게이션</span>
+            </a>
+          </li>
+          <li class="self-end">
+            <a
+              href="/"
+              class="flex flex-col items-center justify-center px-3 py-2"
+            >
+              <img
+                src="/assets/icons/share.svg"
+                alt=""
+                aria-hidden="true"
+                class="w-6"
+              />
+              <span class="mt-[1px] text-xs tracking-tighter">공유</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- topNav -->
+      <main>
+        <nav class="topNav bottom-0 left-0 w-full bg-lightblue/900 text-center">
+          <ul class="topNavList flex justify-between">
+            <li class="topNavItem active flex-shrink-0 flex-grow p-2">
+              <a
+                href="#"
+                class="block border-b-2 border-lightblue/300 p-1 text-base font-semibold text-lightblue/300"
+                >홈</a
+              >
+            </li>
+            <li class="topNavItem flex-shrink-0 flex-grow p-2">
+              <a
+                href="#"
+                class="block p-1 text-base font-semibold text-gray/300"
+                >소식</a
+              >
+            </li>
+            <li class="topNavItem flex-shrink-0 flex-grow p-2">
+              <a
+                href="#"
+                class="block p-1 text-base font-semibold text-gray/300"
+                >메뉴</a
+              >
+            </li>
+            <li class="topNavItem flex-shrink-0 flex-grow p-2">
+              <a
+                href="#"
+                class="block p-1 text-base font-semibold text-gray/300"
+                >리뷰</a
+              >
+            </li>
+            <li class="topNavItem flex-shrink-0 flex-grow p-2">
+              <a
+                href="#"
+                class="block p-1 text-base font-semibold text-gray/300"
+                >사진</a
+              >
+            </li>
+            <li class="topNavItem flex-shrink-0 flex-grow p-2">
+              <a
+                href="#"
+                class="block p-1 text-base font-semibold text-gray/300"
+                >지도</a
+              >
+            </li>
+            <li class="topNavItem flex-shrink-0 flex-grow p-2">
+              <a
+                href="#"
+                class="block p-1 text-base font-semibold text-gray/300"
+                >주변</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <!-- //topNav -->
+
+        <div class="noticeArea px-4 py-3">
+          <div class="notce flex justify-between">
+            <p class="font-semibold text-gray/300">
+              <strong class="text-black">이벤트, 혜택</strong> 알림을
+              받아보세요!
+            </p>
+            <button class="font-semibold">
+              <span class="inline-block align-middle"
+                ><img src="/assets/icons/bell.svg" alt="종 아이콘" /></span
+              >알림받기
+            </button>
+          </div>
+
+          <div class="mt-4 flex overflow-hidden rounded-2xl">
+            <figure class="flex-shrink-0 basis-24">
+              <img
+                src="/assets/images/review-map-image-3.png"
+                alt="리뷰 이미지"
+              />
+            </figure>
+            <div class="flex flex-col justify-center gap-1 bg-white px-3">
+              <p class="title font-semibold">영수증리뷰 올리고 음료수 먹자!</p>
+              <p class="date text-gray/500">2023.02.02</p>
+              <p class="date line-clamp-2 text-gray/300">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book.
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- //noticeArea -->
+    </div>
+  </body>
+</html>
