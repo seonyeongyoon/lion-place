@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Lion-Place</title>
     <link
       rel="stylesheet preload"
       as="style"
@@ -19,7 +19,7 @@
   </head>
   <body class="font-pretendard">
     <div class="mx-auto min-w-[320px] max-w-[599px]" id="map">
-      <header>
+      <header class="relative">
         <!-- 최상단 통신상태 및 시간표시 -->
         <div
           class="fixed top-0 z-50 flex w-full max-w-[599px] items-center bg-white px-[18px] py-2"
@@ -38,10 +38,25 @@
           <img src="/assets/icons/4g.svg" alt="" aria-hidden="true" />
         </div>
         <!-- 위치정보 표시 -->
-        <div>
-          <img src="/assets/icons/left.svg" alt="뒤로가기" />
-          <p>연남/합정 데이트</p>
-          <button>임시저장</button>
+        <div
+          class="fixed top-10 z-50 flex w-full max-w-[599px] items-center bg-white px-[18px] py-2"
+        >
+          <a href="/"
+            ><img
+              src="/assets/icons/left-black.svg"
+              alt="뒤로가기"
+              class="h-[30px] w-[30px]"
+          /></a>
+          <p class="flex-grow">연남/합정 데이트</p>
+          <button
+            type="button"
+            class="rounded-3xl border border-solid border-black px-2 py-1 text-xs font-semibold"
+          >
+            임시저장
+          </button>
+          <a href="/">
+            <img src="/assets/icons/more.svg" alt="더보기" />
+          </a>
         </div>
       </header>
       <nav
@@ -120,12 +135,27 @@
         </ul>
       </nav>
       <main class="relative">
+        <!-- 상단버튼 -->
         <div id="map" class="mx-4 h-screen"></div>
-        <a href="/pages/theme/map.html" class="absolute top-1 right-5 z-10">
-          <div class="mb-20 shadow-md w-5 h-5 rounded-sm bg-white  relative">
-            <img src="/assets/icons/up-arrow.svg" alt="" aria-hidden="true" class="float-right top-0 right-0 absolute"/>
-            <img src="/assets/icons/down-arrow.svg" alt="" aria-hidden="true" class=" left-0 bottom-0 absolute" />
-          </div>
+        <button type="button" class="absolute  top-24 left-2 z-50 bg-white rounded p-1 shadow-lg border">
+          <img src="/assets/icons/start.svg" alt="시작위치" />
+        </button>
+        <button type="button" class="flex items-center absolute top-24 left-[50%] -translate-x-1/2 z-50 bg-white py-2 px-4 rounded-3xl border">
+          <img src="/assets/icons/back.svg" alt="" aria-hidden="true" />
+          <p class="ml-1 text-secondary text-xs font-semibold">원 위치로 돌아가기</p>
+        </button>
+        <button type="button" class="absolute  top-24 right-2 z-50 bg-white rounded p-1 shadow-lg border">
+          <img src="/assets/icons/location.svg" alt="위치정보" />
+        </button>
+        <!-- 하단버튼 -->
+        <div class="shadow-2xl">
+          <button type="button" class="absolute bottom-32 right-4 bg-white p-1 z-50 border rounded-t-md">
+            <img src="/assets/icons/plus-gray.svg" alt="확대" />
+          </button>
+          <button type="button" class="absolute bottom-24 right-4 bg-white p-1 z-50 border rounded-b-md">
+            <img src="/assets/icons/minus-gray.svg" alt="축소" />
+          </button>
+        </div>
       </main>
     </div>
   </body>
