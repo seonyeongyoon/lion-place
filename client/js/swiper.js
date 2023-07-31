@@ -5,8 +5,8 @@ const swiperContainer = getNode(".swiper");
 const swiperSlide = getNodes(".swiper-slide");
 
 const swiper = new Swiper(".swiper", {
-  slidesPerView: 1.7,
-  spaceBetween: 12,
+  slidesPerView: 3,
+  spaceBetween: 10,
   freeMode: true,
   // sticky: false,
   breakpoints: {
@@ -39,6 +39,8 @@ const swiper = new Swiper(".swiper", {
       slidesPerView: 1.3,
     },
   },
+  updateOnWindowResize: true,
+  setWrapperSize: true,
 });
 
 // swiperSlide.style.width = "200px";
