@@ -3,6 +3,7 @@ import { getNode, getNodes } from "../../lib/dom/getNode.js";
 // const swiperContainer = getNode(".swiper");
 const swiperWrapper = getNode(".swiper-wrapper");
 const swiperSlide = getNodes(".swiper-slide");
+const keywordButton = getNodes(".drop-shadow-lg");
 
 const swiper = new Swiper(".swiper", {
   slidesPerView: 2,
@@ -44,7 +45,5 @@ const swiper = new Swiper(".swiper", {
 swiperSlide.forEach((element) => {
   element.style.marginRight = "0";
 });
-function setWrapperMargin() {
-  swiperWrapper.style.marginRight = "0";
-  swiperWrapper.style.paddingRight = "0";
-}
+
+console.log(keywordButton);
