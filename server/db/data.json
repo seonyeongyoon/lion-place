@@ -31,7 +31,7 @@
       "store": "스타벅스 역삼점",
       "description": "아메리카노 존맛탱",
       "location": "서울시 강남구 역삼동",
-      "visitDate": "7.30.일 방문",
+      "visitDate": "7.30.일",
       "image": "/assets/reviewChoice/thumbnail4.png",
       "alt":"스타벅스 역삼점",
       "stock": 4
@@ -40,7 +40,7 @@
       "store": "부자피자",
       "description": "피자가 맛있어요",
       "location": "서울시 이태원",
-      "visitDate": "4.1.토 방문",
+      "visitDate": "4.1.토",
       "image": "/assets/reviewChoice/thumbnail5.png",
       "alt":"부자피자",
       "stock": 5
@@ -76,7 +76,7 @@
       "store": "스타벅스 역삼점",
       "description": "아메리카노 존맛탱",
       "location": "서울시 강남구 역삼동",
-      "visitDate": "7.30.일 방문",
+      "visitDate": "7.30.일",
       "image": "/assets/reviewChoice/thumbnail4.png",
       "alt":"스타벅스 역삼점",
       "stock": 9
@@ -85,7 +85,7 @@
       "store": "부자피자",
       "description": "피자가 맛있어요",
       "location": "서울시 이태원",
-      "visitDate": "4.1.토 방문",
+      "visitDate": "4.1.토",
       "image": "/assets/reviewChoice/thumbnail5.png",
       "alt":"부자피자",
       "stock": 10

@@ -655,9 +655,9 @@ video {
   align-self: center;
 }
 
-.bg-gray\/100 {
+.bg-gray-100 {
   --tw-bg-opacity: 1;
-  background-color: rgb(225 225 225 / var(--tw-bg-opacity));
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
 .bg-white {
@@ -721,8 +721,8 @@ video {
   padding-left: 0.25rem;
 }
 
-.pt-8 {
-  padding-top: 2rem;
+.pt-5 {
+  padding-top: 1.25rem;
 }
 
 .text-center {
