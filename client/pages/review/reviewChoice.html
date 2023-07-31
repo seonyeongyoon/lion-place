@@ -11,168 +11,144 @@
       href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard-dynamic-subset.css"
     />
     <link rel="stylesheet" href="../../css/main.css" />
+    <script src="../../js/review/reviewChoice.js" type="module"></script>
   </head>
   <body class="font-pretendard">
     <div class="mx-auto min-w-[320px] max-w-[599px]">
-      <section>
+      <header>
+        <!-- 최상단 통신상태 및 시간표시 -->
+        <div
+          class="fixed top-0 z-50 flex w-full max-w-[599px] items-center bg-white px-[18px] py-2"
+        >
+          <time datetime="2023-07-28T03:15" class="font-semibold">3:15</time>
+          <div class="flex-grow">
+            <img
+              src="/assets/icons/position.svg"
+              alt=""
+              class="pl-1"
+              aria-hidden="true"
+            />
+          </div>
+          <img src="/assets/icons/battery.svg" alt="" aria-hidden="true" />
+          <span class="px-1 text-xs font-bold" aria-hidden="true">LTE</span>
+          <img src="/assets/icons/4g.svg" alt="" aria-hidden="true" />
+        </div>
+      </header>
+
+      <!-- 하단 공통 내비게이션 -->
+      <nav
+        class="fixed bottom-0 z-50 w-full max-w-[599px] bg-white px-[17px] pb-[10px]"
+      >
+        <!-- 공통내비 -->
+        <h2 class="sr-only">메인 메뉴</h2>
+        <ul class="flex justify-between">
+          <li class="self-end">
+            <a
+              href="/"
+              class="mr-[8px] flex flex-col items-center justify-center px-3 py-2"
+            >
+              <img
+                src="/assets/icons/map.svg"
+                alt=""
+                aria-hidden="true"
+                class="w-[22px]"
+              />
+              <span class="text-xs tracking-tighter">지도</span>
+            </a>
+          </li>
+          <li class="self-end">
+            <a href="/" class="mr-[2px] flex flex-col items-center px-3 py-2">
+              <img
+                src="/assets/icons/save.svg"
+                alt=""
+                aria-hidden="true"
+                class="w-[22px]"
+              />
+              <span class="mt-[2px] text-xs tracking-tighter">저장</span>
+            </a>
+          </li>
+          <li class="self-end">
+            <a
+              href="/"
+              class="flex flex-col items-center justify-center px-3 py-2"
+            >
+              <img
+                src="/assets/icons/subway.svg"
+                alt=""
+                aria-hidden="true"
+                class="w-6"
+              />
+              <span class="mt-[2px] text-xs tracking-tighter">대중교통</span>
+            </a>
+          </li>
+          <li class="self-end">
+            <a
+              href="/"
+              class="flex flex-col items-center justify-center px-3 py-2"
+            >
+              <img
+                src="/assets/icons/car.svg"
+                alt=""
+                aria-hidden="true"
+                class="w-7"
+              />
+              <span class="text-xs tracking-tighter">내비게이션</span>
+            </a>
+          </li>
+          <li class="self-end">
+            <a
+              href="/"
+              class="flex flex-col items-center justify-center px-3 py-2"
+            >
+              <img
+                src="/assets/icons/my.svg"
+                alt=""
+                aria-hidden="true"
+                class="w-6"
+              />
+              <span class="mt-[1px] text-xs tracking-tighter">MY</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- //하단 공통 내비게이션 -->
+
+      <section class="pt-8">
         <div class="titleArea flex justify-between p-4">
           <button>
-            <img src="./../../assets/icons/left.svg" alt="뒤로가기 버튼" />
+            <img src="/assets/icons/left.svg" alt="뒤로가기 버튼" />
           </button>
           <h2 class="text-center text-base font-semibold">리뷰 선택</h2>
           <button>
-            <img src="./../../assets/icons/close.svg" alt="닫기 버튼" />
+            <img src="/assets/icons/close.svg" alt="닫기 버튼" />
           </button>
         </div>
-        <div class="bg-gray-100 p-4">
+        <div class="bg-gray/100 p-4">
           <div class="btnGroup flex justify-between">
             <div class="btnLeft">
               <button class="mr-3 text-xs font-semibold">
                 <i class="mr-3 inline-block"
                   ><img
-                    src="./../../assets/icons/hamburger.svg"
+                    src="/assets/icons/hamburger.svg"
                     alt="햄버거메뉴 버튼" /></i
                 ><span class="align-top">전체</span>
               </button>
-              <button class="text-xs">
+              <button class="text-xs font-semibold text-gray/300">
                 <i class="mr-3 inline-block"
-                  ><img
-                    src="./../../assets/icons/photo.svg"
-                    alt="카메라 버튼" /></i
+                  ><img src="/assets/icons/photo.svg" alt="카메라 버튼" /></i
                 ><span class="align-top">사진</span>
               </button>
             </div>
             <div class="btnRight">
-              <button class="text-xs font-semibold">
+              <button class="text-xs font-semibold text-gray/500">
                 <span class="align-top">최신순</span
                 ><i class="inline-block"
-                  ><img src="./../../assets/icons/down.svg" alt="화살표 아이콘"
+                  ><img src="/assets/icons/down.svg" alt="화살표 아이콘"
                 /></i>
               </button>
             </div>
           </div>
-          <ul class="reviewList">
-            <li class="reviewItem mt-4 overflow-hidden rounded-2xl bg-white">
-              <a href="/" class="flex">
-                <figure>
-                  <img src="http://via.placeholder.com/100x100" alt="" />
-                </figure>
-                <div
-                  class="flex flex-shrink-0 flex-grow flex-col justify-center pl-3 pr-3"
-                >
-                  <h3 class="flex justify-between space-x-2 font-semibold">
-                    후타츠 홍대본점<i class="inline-block"
-                      ><img
-                        src="./../../assets/icons/call.svg"
-                        alt="전화기 아이콘"
-                    /></i>
-                  </h3>
-                  <p>홍대에 있는 소바 중에 제일 맛있어요.</p>
-                  <p><span>서울시 서교동</span> | <span>4.1.토</span>방문</p>
-                </div>
-              </a>
-            </li>
-            <li class="reviewItem mt-4 overflow-hidden rounded-2xl bg-white">
-              <a href="/" class="flex">
-                <figure>
-                  <img src="http://via.placeholder.com/100x100" alt="" />
-                </figure>
-                <div
-                  class="flex flex-shrink-0 flex-grow flex-col justify-center pl-3 pr-3"
-                >
-                  <h3 class="flex justify-between space-x-2 font-semibold">
-                    후타츠 홍대본점<i class="inline-block"
-                      ><img
-                        src="./../../assets/icons/call.svg"
-                        alt="전화기 아이콘"
-                    /></i>
-                  </h3>
-                  <p>홍대에 있는 소바 중에 제일 맛있어요.</p>
-                  <p><span>서울시 서교동</span> | <span>4.1.토</span>방문</p>
-                </div>
-              </a>
-            </li>
-            <li class="reviewItem mt-4 overflow-hidden rounded-2xl bg-white">
-              <a href="/" class="flex">
-                <figure>
-                  <img src="http://via.placeholder.com/100x100" alt="" />
-                </figure>
-                <div
-                  class="flex flex-shrink-0 flex-grow flex-col justify-center pl-3 pr-3"
-                >
-                  <h3 class="flex justify-between space-x-2 font-semibold">
-                    후타츠 홍대본점<i class="inline-block"
-                      ><img
-                        src="./../../assets/icons/call.svg"
-                        alt="전화기 아이콘"
-                    /></i>
-                  </h3>
-                  <p>홍대에 있는 소바 중에 제일 맛있어요.</p>
-                  <p><span>서울시 서교동</span> | <span>4.1.토</span>방문</p>
-                </div>
-              </a>
-            </li>
-            <li class="reviewItem mt-4 overflow-hidden rounded-2xl bg-white">
-              <a href="/" class="flex">
-                <figure>
-                  <img src="http://via.placeholder.com/100x100" alt="" />
-                </figure>
-                <div
-                  class="flex flex-shrink-0 flex-grow flex-col justify-center pl-3 pr-3"
-                >
-                  <h3 class="flex justify-between space-x-2 font-semibold">
-                    후타츠 홍대본점<i class="inline-block"
-                      ><img
-                        src="./../../assets/icons/call.svg"
-                        alt="전화기 아이콘"
-                    /></i>
-                  </h3>
-                  <p>홍대에 있는 소바 중에 제일 맛있어요.</p>
-                  <p><span>서울시 서교동</span> | <span>4.1.토</span>방문</p>
-                </div>
-              </a>
-            </li>
-            <li class="reviewItem mt-4 overflow-hidden rounded-2xl bg-white">
-              <a href="/" class="flex">
-                <figure>
-                  <img src="http://via.placeholder.com/100x100" alt="" />
-                </figure>
-                <div
-                  class="flex flex-shrink-0 flex-grow flex-col justify-center pl-3 pr-3"
-                >
-                  <h3 class="flex justify-between space-x-2 font-semibold">
-                    후타츠 홍대본점<i class="inline-block"
-                      ><img
-                        src="./../../assets/icons/call.svg"
-                        alt="전화기 아이콘"
-                    /></i>
-                  </h3>
-                  <p>홍대에 있는 소바 중에 제일 맛있어요.</p>
-                  <p><span>서울시 서교동</span> | <span>4.1.토</span>방문</p>
-                </div>
-              </a>
-            </li>
-            <li class="reviewItem mt-4 overflow-hidden rounded-2xl bg-white">
-              <a href="/" class="flex">
-                <figure>
-                  <img src="http://via.placeholder.com/100x100" alt="" />
-                </figure>
-                <div
-                  class="flex flex-shrink-0 flex-grow flex-col justify-center pl-3 pr-3"
-                >
-                  <h3 class="flex justify-between space-x-2 font-semibold">
-                    후타츠 홍대본점<i class="inline-block"
-                      ><img
-                        src="./../../assets/icons/call.svg"
-                        alt="전화기 아이콘"
-                    /></i>
-                  </h3>
-                  <p>홍대에 있는 소바 중에 제일 맛있어요.</p>
-                  <p><span>서울시 서교동</span> | <span>4.1.토</span>방문</p>
-                </div>
-              </a>
-            </li>
-          </ul>
+          <ul class="reviewList"></ul>
         </div>
       </section>
     </div>
