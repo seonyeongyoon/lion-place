@@ -1,4 +1,12 @@
-import { getNode as $, insertLast, delayP, tiger } from "/lib/index.js";
+import {
+  getNode as $,
+  insertLast,
+  delayP,
+  tiger,
+  attr,
+  addClass,
+  removeClass,
+} from "/lib/index.js";
 
 // const words = [
 //   "spray",
@@ -43,47 +51,94 @@ async function renderUserList() {
 
 renderUserList();
 
+const tabMenu = $(".tabMenu");
+const tabMenuUl = $(".tabMenu ul");
+const list = [...tabMenuUl.children];
+
+async function filter(e) {
+  const response = await tiger.get("http://localhost:3000/followRecent");
+  const userData = response.data;
+  userData.forEach((item) => renderUserCard(cardList, item));
+  //let result = userData.filter((value) => value.dataFilter == filter);
+  //console.log(result);
+  const target = e.target.closest("li");
+  const anchor = e.target.closest("button");
+  const filter = attr(target, "data-filter");
+  const filterValue = userData.filter((value) => value.dataFilter);
+  console.log(filterValue);
+  let result = userData.filter(
+    (value) => value.dataFilter == anchor.textContent,
+  );
+
+  let objElem = userData[0];
+  let objKey = Object.keys(objElem)[0]; //key를구하고
+  let objValue = objElem[Object.keys(objElem)[0]];
+  console.log(objValue);
+
+  //console.log(result);
+
+  // for (const item of userData) {
+  //   if (userData.filterValue.includes(anchor.textContent)) {
+  //     item.style.display = "block";
+  //   } else {
+  //     item.style.display = "none";
+  //   }
+  // }
+
+  // clearContents(cardList);
+  // renderUserCard(cardList, result);
+
+  list.forEach((li) => {
+    removeClass(li, "bg-gray-500");
+    removeClass(li, "text-white");
+  });
+  addClass(target, "bg-gray-500");
+  addClass(target, "text-white");
+}
+
+tabMenu.addEventListener("click", filter);
+
 //생성 (생성하는 함수는 export할 필요 x)
 function createUserCard({
+  dataFilter = "",
+  store = "",
+  location = "",
+  description = "",
+  hashTag = "",
   image = "",
   alt = "",
-  store = "",
-  description = "",
-  location = "",
-  visitDate = "",
 }) {
   const template = `
     <li
-    class="reviewItem bd-gray-200 mt-4 overflow-hidden rounded-2xl border bg-white p-3 shadow"
-    data-filter="양식"
+    class="reviewItem bd-gray-200 mt4 overflow-hidden rounded2xl border bg-white p3 shadowBase"
+    data-filter="${dataFilter}"
   >
     <a href="/" class="pl-3 pr-3">
       <h3 class="tex-base font-semibold">
-        소박한이야기
-        <span class="place text-xs text-gray-300">서울시 서교동</span>
+        ${store}
+        <span class="place text-xs text-gray300">${location}</span>
       </h3>
       <div
-        class="mt-3 flex flex-shrink-0 flex-grow items-center justify-between"
+        class="mt-3 flex flex-shrink-0 flex-grow items-center justify-between gap4"
       >
-        <div class="">
+        <div class="description">
           <p
-            class="block overflow-hidden text-ellipsis text-gray-600"
+            class="block overflow-hidden textEllipsis text-gray-600 lineClamp-2 webkitBox webkitBoxVertical"
           >
-            진짜 맨날 근처오면 와서 4-5개씩은 사가는 곳입니다.
-            비건디저트 특유의 향이 안나서 더 좋아요!
+            ${description}
           </p>
-          <div class="hasTagArea mt-3">
+          <div class="hashTagArea mt3">
             <span
-              class="hashTag rounded-sm bg-gray-50 p-2 text-gray-600"
-              >매장이 청결해요</span
+              class="hashTag rounded-sm bg-gray50 p2 text-gray-600"
+              >${hashTag[0]}</span
             ><span
-              class="hashTag ml-1 rounded-sm bg-gray-50 p-2 text-gray-600"
-              >+2</span
+              class="hashTag ml1 rounded-sm bg-gray50 p2 text-gray-600"
+              >${hashTag[1]}</span
             >
           </div>
         </div>
-        <figure class="overflow-hidden rounded">
-          <img src="http://via.placeholder.com/100x100" alt="" />
+        <figure class="overflow-hidden roundedBase basis-20 h20 shrink0 posRelative">
+          <img class="posAbsolute left50 top50 translate50 minWidth40" src="${image}" alt="${alt}" />
         </figure>
       </div>
     </a>
@@ -147,4 +202,14 @@ function renderUserCard(target, data) {
 
 function renderEmptyCard(target) {
   insertLast(target, createEmptyCard());
+}
+
+function clearContents(node) {
+  if (typeof node === "string") node = getNode(node);
+  if (node.nodeName === "INPUT" || node.nodeName === "TEXTAREA") {
+    node.value = "";
+    return;
+  }
+
+  node.textContent = "";
 }
