@@ -662,6 +662,10 @@ video {
   height: 2.5rem;
 }
 
+.h-32 {
+  height: 8rem;
+}
+
 .h-7 {
   height: 1.75rem;
 }
@@ -672,14 +676,6 @@ video {
 
 .h-full {
   height: 100%;
-}
-
-.h-20 {
-  height: 5rem;
-}
-
-.h-32 {
-  height: 8rem;
 }
 
 .w-1\/6 {
