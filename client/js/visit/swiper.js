@@ -58,14 +58,14 @@ function handleActive(e) {
 
   if (!target || keyword?.classList.contains("arrow") || !keyword) return;
 
-  if (target) target.classList.toggle("bg-primary");
-
+  if (target) {
+    target.classList.toggle("bg-primary");
+    target.classList.toggle("bg-gray/50");
+  }
   if (keyword) {
     keyword.classList.toggle("text-white");
     keyword.classList.toggle("text-gray/500");
   }
-
-  target.classList.toggle("bg-gray/50");
 }
 
 swiperWrapper.addEventListener("click", handleActive);
