@@ -1,7 +1,6 @@
 import { getNode, getNodes } from "/lib/dom/getNode.js";
-// import { addClass, removeClass } from "./../../lib/dom/css.js";
-import { attr } from "../../lib/dom/attr.js";
-import { addClass, css, removeClass } from "../../lib/dom/css.js";
+import { attr } from "/lib/dom/attr.js";
+import { addClass, css, removeClass } from "/lib/dom/css.js";
 
 // const swiperContainer = getNode(".swiper");
 const swiperWrapper = getNode(".swiper-wrapper");
@@ -59,16 +58,15 @@ function handleActive(e) {
   let primary = getNodes("button.bg-primary");
   console.log(primary);
 
-  if (primary.length - 1 >= 6) {
-    return;
-  }
+  if (!(primary.length - 1 >= 6)) {
+    button.classList.toggle("bg-primary");
+    const spans = button.querySelectorAll("span");
 
-  button.classList.toggle("bg-primary");
-
-  const spans = button.querySelectorAll("span");
-
-  if (spans[1]) {
-    spans[1].classList.toggle("text-white");
+    if (spans[1]) {
+      spans[1].classList.toggle("text-white");
+    }
+  } else {
+    button.classList.removeClass("bg-primary");
   }
 }
 
