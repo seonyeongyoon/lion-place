@@ -16,6 +16,9 @@
 }
 
 /* bg color */
+.bgBlack {
+  background-color: #000000;
+}
 .bg-gray50 {
   background-color: #f9f9f9;
 }
@@ -60,14 +63,34 @@
 .roundedBase {
   border-radius: 0.25rem;
 }
+.roundedXl {
+  border-radius: 0.75rem;
+}
 .rounded2xl {
   border-radius: 1rem;
 }
+.roundedFull {
+  border-radius: 9999px;
+}
+
+/* flex */
 .shrink0 {
   flex-shrink: 0;
 }
 
 /* margin */
+.my2 {
+  margin: 0.5rem 0;
+}
+
+.mt1 {
+  margin-top: 0.25rem;
+}
+
+.mt2 {
+  margin-top: 0.5rem;
+}
+
 .mt3 {
   margin-top: 0.75rem;
 }
@@ -257,8 +280,17 @@
 }
 
 /* height */
+.h7 {
+  height: 1.75rem;
+}
 .h20 {
   height: 5rem;
+}
+.h40 {
+  height: 10rem;
+}
+.h52 {
+  height: 13rem;
 }
 
 /* box-shadow */
