@@ -1,28 +1,9 @@
 import { getNode } from "./../../lib/dom/getNode.js";
 
-/* global gsap */
-gsap.registerPlugin(ScrollTrigger);
-
-gsap.from(".bar", {
-  y: -15,
-  duration: 1,
-  opacity: 0,
-  scrollTrigger: {
-    trigger: ".titleArea",
-    markers: true,
-    start: "top center",
-    end: "bottom 20%",
-    toggleActions: "restart pause play reverse",
-    fastScrollEnd: true,
-    endTrigger: ".mainContents",
-  },
-  pin: true,
-  pinSpacing: false,
-});
-
 const bar = getNode(".bar");
 
 console.log(bar);
+bar.classList.add("hidden");
 
 function handleScroll() {
   const scrollPosition = window.scrollY;

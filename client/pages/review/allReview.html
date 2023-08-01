@@ -15,9 +15,6 @@
       type="text/javascript"
       src="//dapi.kakao.com/v2/maps/sdk.js?appkey=25319638cf6e1239fa6f8c8fa0ce21df"
     ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
 
     <script src="/js/map/reviewMap.js" type="module"></script>
     <script src="/js/review/allReview.js" type="module"></script>
@@ -80,6 +77,85 @@
           <img src="/assets/icons/4g.svg" alt="" aria-hidden="true" />
         </div>
       </header>
+
+      <nav
+        class="fixed bottom-0 z-50 w-full max-w-[599px] bg-white px-[17px] pb-[10px]"
+      >
+        <!-- 공통내비 -->
+        <h2 class="sr-only">메인 메뉴</h2>
+        <ul class="flex justify-between">
+          <li class="mr-[8px] self-end">
+            <a
+              href="/pages/theme/map.html"
+              class="flex flex-col items-center justify-center px-3 py-2"
+            >
+              <img
+                src="/assets/icons/map.svg"
+                alt=""
+                aria-hidden="true"
+                class="w-[22px]"
+              />
+              <span class="text-xs tracking-tighter">지도</span>
+            </a>
+          </li>
+          <li class="mr-[2px] self-end">
+            <a
+              href="/pages/theme/themeEnroll2.html"
+              class="flex flex-col items-center px-3 py-2"
+            >
+              <img
+                src="/assets/icons/save.svg"
+                alt=""
+                aria-hidden="true"
+                class="mt-[2px] w-[22px]"
+              />
+              <span class="mt-[3px] text-xs tracking-tighter">저장</span>
+            </a>
+          </li>
+          <li class="self-end">
+            <a
+              href="/pages/theme/map.html"
+              class="flex flex-col items-center justify-center px-3 py-2"
+            >
+              <img
+                src="/assets/icons/subway.svg"
+                alt=""
+                aria-hidden="true"
+                class="mt-1 w-6"
+              />
+              <span class="mt-[2px] text-xs tracking-tighter">대중교통</span>
+            </a>
+          </li>
+          <li class="self-end">
+            <a
+              href="/pages/theme/map.html"
+              class="flex flex-col items-center justify-center px-3 py-2"
+            >
+              <img
+                src="/assets/icons/car.svg"
+                alt=""
+                aria-hidden="true"
+                class="w-7"
+              />
+              <span class="mt-[1px] text-xs tracking-tighter">내비게이션</span>
+            </a>
+          </li>
+          <li class="self-end">
+            <a
+              href="/pages/theme/themepage.html"
+              class="flex flex-col items-center justify-center px-3 py-2"
+            >
+              <img
+                src="/assets/icons/my.svg"
+                alt=""
+                aria-hidden="true"
+                class="mt-[2px] w-6"
+              />
+              <span class="mt-1 text-xs tracking-tighter">MY</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
 
       <!-- common navigation -->
 
