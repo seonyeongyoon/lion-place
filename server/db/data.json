@@ -89,6 +89,13 @@
       "image": "/assets/reviewChoice/thumbnail5.png",
       "alt": "부자피자",
       "stock": 10
+    },
+    {
+      "title": "로그인",
+      "description": "로그인: 아이디 비밀번호 이메일",
+      "userid": "energizozo",
+      "userpw": "energizozo1234",
+      "userEmail": "energizo@naver.com"
     }
   ]
 }
