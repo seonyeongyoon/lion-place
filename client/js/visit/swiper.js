@@ -1,11 +1,13 @@
 import { getNode, getNodes } from "/lib/dom/getNode.js";
-import { addClass, removeClass } from "./../../lib/dom/css.js";
+// import { addClass, removeClass } from "./../../lib/dom/css.js";
 import { attr } from "../../lib/dom/attr.js";
+import { addClass, css, removeClass } from "../../lib/dom/css.js";
 
 // const swiperContainer = getNode(".swiper");
 const swiperWrapper = getNode(".swiper-wrapper");
 const swiperSlide = getNodes(".swiper-slide");
-const keywordButton = getNodes(".drop-shadow-lg");
+const swiperContainer = getNode(".swiper");
+// console.log(swiperContainer);
 
 // swiper
 const swiper = new Swiper(".swiper", {
@@ -52,19 +54,16 @@ swiperSlide.forEach((element) => {
 function handleActive(e) {
   e.preventDefault();
 
-  let target = e.target.closest("button");
-  let keyword = e.target.closest("span");
-  // if (!target || !keyword) console.log(keyword);
+  let target = e.target;
+  let button = e.target.closest("button");
 
-  if (!target || keyword?.classList.contains("arrow") || !keyword) return;
+  if (!button || button.classList.contains("arrow")) return;
 
-  if (target) {
-    target.classList.toggle("bg-primary");
-    target.classList.toggle("bg-gray/50");
-  }
-  if (keyword) {
-    keyword.classList.toggle("text-white");
-    keyword.classList.toggle("text-gray/500");
+  button.classList.toggle("bg-primary");
+  const spans = button.querySelectorAll("span");
+
+  if (spans[1]) {
+    spans[1].classList.toggle("text-white");
   }
 }
 
