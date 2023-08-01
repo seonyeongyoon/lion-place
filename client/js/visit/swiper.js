@@ -6,8 +6,6 @@ import { addClass, css, removeClass } from "../../lib/dom/css.js";
 // const swiperContainer = getNode(".swiper");
 const swiperWrapper = getNode(".swiper-wrapper");
 const swiperSlide = getNodes(".swiper-slide");
-const swiperContainer = getNode(".swiper");
-// console.log(swiperContainer);
 
 // swiper
 const swiper = new Swiper(".swiper", {
@@ -56,10 +54,17 @@ function handleActive(e) {
 
   let target = e.target;
   let button = e.target.closest("button");
-
   if (!button || button.classList.contains("arrow")) return;
 
+  let primary = getNodes("button.bg-primary");
+  console.log(primary);
+
+  if (primary.length - 1 >= 6) {
+    return;
+  }
+
   button.classList.toggle("bg-primary");
+
   const spans = button.querySelectorAll("span");
 
   if (spans[1]) {
