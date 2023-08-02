@@ -984,10 +984,13 @@ video {
   margin-top: 3px;
 }
 
+<<<<<<< HEAD
 .box-border {
   box-sizing: border-box;
 }
 
+=======
+>>>>>>> feedPage
 .box-content {
   box-sizing: content-box;
 }
