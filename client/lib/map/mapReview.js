@@ -64,5 +64,4 @@ for (let i = 0; i < positions.length; i ++) {
     });
 } 
 
-
 }

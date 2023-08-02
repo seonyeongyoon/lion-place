@@ -281,6 +281,16 @@
       "image": "/assets/images/review/reviewChoice/thumbnail5.png",
       "alt": "부자피자",
       "stock": 10
+    },
+    {
+      "id": 1,
+      "uniqueID": "id",
+      "email": "energizozo@naver.com",
+      "password": "energizo123",
+      "name": "COOLION",
+      "img": null,
+      "theme": [],
+      "visited": []
     }
   ],
   "allReview": [

@@ -1,5 +1,9 @@
-export function createAllReviewMap(lat,lng){
-    const mapContainer = document.getElementById('map') // 지도를 표시할 div 
+import { getNode } from "../dom/index.js";
+import { typeError } from "../error/typeError.js";
+
+export function createAllReviewMap(node,lat,lng){
+    if (typeof node !=='string') typeError('createMap의 첫번째 인수는 문자 타입 이어야 합니다.')
+    const mapContainer = getNode(node) // 지도를 표시할 div  
 
 let mapOption = { 
         center: new kakao.maps.LatLng(lat,lng), // 지도의 중심좌표
@@ -55,4 +59,4 @@ let customOverlay = new kakao.maps.CustomOverlay({
 customOverlay.setMap(map);
 }
 
-// createAllReviewMap(37.558048589925534,126.91122939941944)
+// createAllReviewMap(,37.558048589925534,126.91122939941944)
