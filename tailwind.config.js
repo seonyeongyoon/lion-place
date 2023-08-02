@@ -40,7 +40,6 @@ module.exports = {
         'lightblue/800': '#2d3e63',
         'lightblue/900': '#171f31',
       },
-    
     },
   },
   plugins: [],
