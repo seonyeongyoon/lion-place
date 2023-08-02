@@ -42,3 +42,15 @@ function handleTab(e) {
 }
 
 tabContainer.addEventListener("click", handleTab);
+
+const nav = getNode("nav");
+const list = getNodes("nav ul li");
+
+function onHandleActive(e) {
+  let target = e.target.closest("li");
+
+  if (!target || !list) return;
+
+  target.classList.add("is-activeNav");
+}
+nav.addEventListener("click", onHandleActive);

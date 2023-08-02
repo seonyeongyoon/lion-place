@@ -70,27 +70,16 @@ function handleActive(e) {
   }
 }
 
-// let count = 0;
-
-// function handleActive(e) {
-//   e.preventDefault();
-
-//   let target = e.target;
-//   let button = e.target.closest("button");
-//   if (!button || button.classList.contains("arrow")) return;
-
-//   let primary = getNodes("button.bg-primary");
-
-//   if (!button.classList.contains("bg-primary")) {
-//     const spans = button.querySelectorAll("span");
-//     if (count < 5) {
-//       button.classList.add("bg-primary");
-//       ++count;
-//     }
-//   } else {
-//     button.classList.remove("bg-primary");
-//     --count;
-//   }
-// }
-
 swiperWrapper.addEventListener("click", handleActive);
+
+const nav = getNode("nav");
+const list = getNodes("nav ul li");
+
+function onHandleActive(e) {
+  let target = e.target.closest("li");
+
+  if (!target || !list) return;
+
+  target.classList.add("is-activeNav");
+}
+nav.addEventListener("click", onHandleActive);
