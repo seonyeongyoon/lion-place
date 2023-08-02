@@ -60,7 +60,7 @@
           <a href="/">
             <img
               class="absolute right-[0.875rem] top-[0.875rem]"
-              src="./../../assets/icons/swiper/close.svg"
+              src="/assets/icons/swiper/close.svg"
               alt="닫기 버튼"
             />
           </a>
@@ -360,20 +360,20 @@
             <div class="px-4">
               <div class="mb-4 flex flex-col bg-gray/50 px-3 py-6">
                 <dl class="text-xs leading-normal">
-                  <p class="text-gray/500">리뷰 작성하기</p>
+                  <p class="font-semibold text-black">리뷰 작성하기</p>
                   <form class="text-gray/500">
                     <label for="reviewText"></label>
                     <input
                       type="text"
-                      class="mt-1 block bg-transparent"
+                      class="mt-1 block w-full bg-transparent"
                       id="storeName"
                       placeholder="가게이름을 입력하세요."
                     />
                     <input
                       type="text"
-                      class="mt-1 block bg-transparent"
+                      class="mt-1 block w-full bg-transparent"
                       id="reviewText"
-                      placeholder="댓글을 입력하세요..."
+                      placeholder="리뷰를 입력하세요."
                     />
                   </form>
                 </dl>
@@ -405,10 +405,10 @@
         <!-- 공통내비 -->
         <h2 class="sr-only">메인 메뉴</h2>
         <ul class="flex justify-between">
-          <li class="self-end">
+          <li class="mr-[8px] self-end">
             <a
-              href="/"
-              class="mr-[8px] flex flex-col items-center justify-center px-3 py-2"
+              href="/pages/theme/map.html"
+              class="flex flex-col items-center justify-center px-3 py-2"
             >
               <img
                 src="/assets/icons/map.svg"
@@ -419,34 +419,37 @@
               <span class="text-xs tracking-tighter">지도</span>
             </a>
           </li>
-          <li class="self-end">
-            <a href="/" class="mr-[2px] flex flex-col items-center px-3 py-2">
+          <li class="mr-[2px] self-end">
+            <a
+              href="/pages/theme/themeEnroll2.html"
+              class="flex flex-col items-center px-3 py-2"
+            >
               <img
                 src="/assets/icons/save.svg"
                 alt=""
                 aria-hidden="true"
-                class="w-[22px]"
+                class="mt-[2px] w-[22px]"
               />
-              <span class="mt-[2px] text-xs tracking-tighter">저장</span>
+              <span class="mt-[3px] text-xs tracking-tighter">저장</span>
             </a>
           </li>
           <li class="self-end">
             <a
-              href="/"
+              href="/pages/theme/map.html"
               class="flex flex-col items-center justify-center px-3 py-2"
             >
               <img
                 src="/assets/icons/subway.svg"
                 alt=""
                 aria-hidden="true"
-                class="w-6"
+                class="mt-1 w-6"
               />
               <span class="mt-[2px] text-xs tracking-tighter">대중교통</span>
             </a>
           </li>
           <li class="self-end">
             <a
-              href="/"
+              href="/pages/theme/map.html"
               class="flex flex-col items-center justify-center px-3 py-2"
             >
               <img
@@ -455,21 +458,21 @@
                 aria-hidden="true"
                 class="w-7"
               />
-              <span class="text-xs tracking-tighter">내비게이션</span>
+              <span class="mt-[1px] text-xs tracking-tighter">내비게이션</span>
             </a>
           </li>
           <li class="self-end">
             <a
-              href="/"
+              href="/pages/theme/themepage.html"
               class="flex flex-col items-center justify-center px-3 py-2"
             >
               <img
                 src="/assets/icons/my.svg"
                 alt=""
                 aria-hidden="true"
-                class="w-6"
+                class="mt-[2px] w-6"
               />
-              <span class="mt-[1px] text-xs tracking-tighter">MY</span>
+              <span class="mt-1 text-xs tracking-tighter">MY</span>
             </a>
           </li>
         </ul>

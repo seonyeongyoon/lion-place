@@ -1,22 +1,16 @@
-import {
-  getNode as $,
-  insertLast,
-  delayP,
-  tiger,
-  attr,
-  addClass,
-  removeClass,
-} from "/lib/index.js";
+import { getNode as $, getNodes, insertLast } from "/lib/index.js";
 
 const reviewArea = $(".reviewArea");
 const textField = $("#reviewText");
 const storeName = $("#storeName");
 const visitList = $(".visitList");
+const swiperSlide = $(".swiper-slide");
+const hashTagBtns = getNodes(".swiper-slide > button");
 
 //클릭한 대상을 찾기
 //클릭한 대상의 data-name 값 찾기
 
-function createReview({ store, reviewDesc }) {
+function createReview(store, reviewDesc, hashTag) {
   let newDate = new Date();
 
   let year = newDate.getFullYear(); // 년도
@@ -35,7 +29,7 @@ function createReview({ store, reviewDesc }) {
       <div class="relative mb-1 flex h-[24px] items-center">
         <span class="storeName mr-1 font-semibold">${store}</span>
         <div class="absolute right-0 flex">
-          <img src="./../../assets/icons/swiper/heart.svg" alt="하트 아이콘" />
+          <img src="/assets/icons/swiper/heart.svg" alt="하트 아이콘" />
           <img src="/assets/icons/swiper/more.svg" alt="더보기 아이콘" />
         </div>
       </div>
@@ -46,10 +40,10 @@ function createReview({ store, reviewDesc }) {
           </span>
           <div class="flex flex-row gap-[2px]">
             <span class="rounded-sm bg-gray/50 px-2 text-xs text-gray/500">
-              <span class="mr-1">✨</span>매장이 청결해요
+              <span class="mr-1">${hashTag}</span>
             </span>
             <span class="rounded-sm bg-gray/50 px-2 text-xs text-gray/500">
-              <span class="mr-1">✨</span>+2
+              <span class="mr-1">${hashTag}</span>
             </span>
           </div>
         </div>
@@ -58,7 +52,7 @@ function createReview({ store, reviewDesc }) {
         파운드 외 2 • 12,300원
       </span>
     </div>
-  </li>;
+  </li>
   `;
   return template;
 }
@@ -77,9 +71,6 @@ function clearContents(target) {
 }
 
 const handleArticle = (e) => {
-  //console.log('target: ',e.target);//target : 마우스가 제일 처음 만나는 대상
-  //console.log('curretTarget: ',e.curretTarget);//curretTarget : 이벤트가 걸린 대상. 하나만 수집이 됨.
-
   let target = e.target;
   let name = target.dataset.name;
 
@@ -98,6 +89,7 @@ const handleArticle = (e) => {
   if (name === "send") {
     e.preventDefault();
     let store = storeName.value; //textField에 입력한 문자값이 value에 담김.
+    console.log(store);
     let reviewDesc = textField.value; //textField에 입력한 문자값이 value에 담김.
     if (reviewDesc === "") return;
 
@@ -110,7 +102,14 @@ const handleArticle = (e) => {
   }
 };
 
-reviewArea.addEventListener("click", handleArticle);
+function createHashTag() {
+  for (let i = 0; i < hashTagBtns.length; i++) {
+    console.log(hashTagBtns[i].textContent);
+  }
+  return;
+}
 
+reviewArea.addEventListener("click", handleArticle);
+swiperSlide.addEventListener("click", createHashTag);
 //parentNode와 parentElement의 차이
 //모든 노드 탐색(주석도 노드에 포함) vs 요소 노트 탐색
