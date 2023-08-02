@@ -1,4 +1,22 @@
-import { getNode as $, insertLast, delayP, tiger } from "/lib/index.js";
+import {
+  getNode as $,
+  getNodes,
+  insertLast,
+  delayP,
+  tiger,
+} from "/lib/index.js";
+
+const nav = $("nav");
+const list = getNodes("nav ul li");
+
+function onHandleActive(e) {
+  let target = e.target.closest("li");
+
+  if (!target || !list) return;
+
+  target.classList.add("is-activeNav");
+}
+nav.addEventListener("click", onHandleActive);
 
 const tabList = document.querySelectorAll(".topNavItem");
 const tabConts = document.querySelectorAll(".tabCont");

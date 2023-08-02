@@ -1,5 +1,6 @@
 import {
   getNode as $,
+  getNodes,
   insertLast,
   delayP,
   tiger,
@@ -7,6 +8,18 @@ import {
   addClass,
   removeClass,
 } from "/lib/index.js";
+
+const nav = $("nav");
+const navList = getNodes("nav ul li");
+
+function onHandleActive(e) {
+  let target = e.target.closest("li");
+
+  if (!target || !navList) return;
+
+  target.classList.add("is-activeNav");
+}
+nav.addEventListener("click", onHandleActive);
 
 // const words = [
 //   "spray",

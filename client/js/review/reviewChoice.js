@@ -1,5 +1,17 @@
 import { getNode as $, insertLast, delayP, tiger } from "/lib/index.js";
 
+const nav = $("nav");
+const list = getNodes("nav ul li");
+
+function onHandleActive(e) {
+  let target = e.target.closest("li");
+
+  if (!target || !list) return;
+
+  target.classList.add("is-activeNav");
+}
+nav.addEventListener("click", onHandleActive);
+
 const reviewList = $(".reviewList");
 
 async function renderUserList() {

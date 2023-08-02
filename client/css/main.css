@@ -932,10 +932,6 @@ video {
   margin-right: 1.5rem;
 }
 
-.mr-\[10px\] {
-  margin-right: 10px;
-}
-
 .mr-\[2px\] {
   margin-right: 2px;
 }
@@ -976,27 +972,18 @@ video {
   margin-top: 2px;
 }
 
-<<<<<<< HEAD
 .mt-\[34px\] {
   margin-top: 34px;
 }
 
-=======
->>>>>>> allReview
 .mt-\[3px\] {
   margin-top: 3px;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> allReview
 .box-border {
   box-sizing: border-box;
 }
 
-=======
->>>>>>> feedPage
 .box-content {
   box-sizing: content-box;
 }
@@ -2259,6 +2246,13 @@ video {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+
+.is-activeNav {
+  border-top-width: 2px;
+  border-style: solid;
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
 /* font color */
