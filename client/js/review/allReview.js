@@ -22,12 +22,6 @@ function handleScroll() {
 
 window.addEventListener("scroll", handleScroll);
 
-// swiperSlide.forEach((element) => {
-//   element.style.width = "150px";
-//   element.style.height = "150px";
-//   element.style.margin = "0";
-//   element.style.padding = "0";
-// });
 var slide = new Swiper(".swiper", {
   slidesPerView: "1",
   loop: false,
@@ -48,3 +42,15 @@ var slide = new Swiper(".swiper", {
     },
   },
 });
+
+const nav = getNode("nav");
+const list = getNodes("nav ul li");
+
+function onHandleActive(e) {
+  let target = e.target.closest("li");
+
+  if (!target || !list) return;
+
+  target.classList.add("is-activeNav");
+}
+nav.addEventListener("click", onHandleActive);
