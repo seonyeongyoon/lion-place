@@ -910,6 +910,10 @@ video {
   margin-bottom: 1rem;
 }
 
+.mb-40 {
+  margin-bottom: 10rem;
+}
+
 .mb-5 {
   margin-bottom: 1.25rem;
 }
@@ -1491,6 +1495,14 @@ video {
   column-gap: 0.875rem;
 }
 
+.gap-y-10 {
+  row-gap: 2.5rem;
+}
+
+.gap-y-20 {
+  row-gap: 5rem;
+}
+
 .place-self-center {
   place-self: center;
 }
@@ -1931,11 +1943,6 @@ video {
   padding-bottom: 2.5rem;
 }
 
-.py-12 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -2121,6 +2128,10 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.font-black {
+  font-weight: 900;
 }
 
 .font-bold {
