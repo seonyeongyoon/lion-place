@@ -578,12 +578,12 @@ video {
   right: -3px;
 }
 
-.top-\[-3px\] {
-  top: -3px;
-}
-
 .top-0 {
   top: 0px;
+}
+
+.top-\[-3px\] {
+  top: -3px;
 }
 
 .z-50 {
@@ -615,12 +615,16 @@ video {
   margin-right: 0.75rem;
 }
 
-.mr-2 {
-  margin-right: 0.5rem;
+.mr-\[2px\] {
+  margin-right: 2px;
 }
 
-.mr-\[10px\] {
-  margin-right: 10px;
+.mr-\[8px\] {
+  margin-right: 8px;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
 }
 
 .mt-\[1px\] {
@@ -629,6 +633,10 @@ video {
 
 .mt-\[2px\] {
   margin-top: 2px;
+}
+
+.mt-\[3px\] {
+  margin-top: 3px;
 }
 
 .box-content {
@@ -657,10 +665,6 @@ video {
 
 .h-3 {
   height: 0.75rem;
-}
-
-.h-40 {
-  height: 10rem;
 }
 
 .h-5 {
@@ -699,6 +703,14 @@ video {
   width: 1.25rem;
 }
 
+.w-6 {
+  width: 1.5rem;
+}
+
+.w-7 {
+  width: 1.75rem;
+}
+
 .w-\[17\.1875rem\] {
   width: 17.1875rem;
 }
@@ -733,14 +745,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-6 {
-  width: 1.5rem;
-}
-
-.w-7 {
-  width: 1.75rem;
 }
 
 .min-w-\[320px\] {
@@ -899,6 +903,11 @@ video {
   padding: 1rem;
 }
 
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -907,6 +916,16 @@ video {
 .px-\[1\.125rem\] {
   padding-left: 1.125rem;
   padding-right: 1.125rem;
+}
+
+.px-\[17px\] {
+  padding-left: 17px;
+  padding-right: 17px;
+}
+
+.px-\[18px\] {
+  padding-left: 18px;
+  padding-right: 18px;
 }
 
 .px-\[3\.5rem\] {
@@ -929,23 +948,16 @@ video {
   padding-bottom: 0.5rem;
 }
 
-.px-1 {
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
-}
-
-.px-\[17px\] {
-  padding-left: 17px;
-  padding-right: 17px;
-}
-
-.px-\[18px\] {
-  padding-left: 18px;
-  padding-right: 18px;
-}
-
 .pb-\[1\.375rem\] {
   padding-bottom: 1.375rem;
+}
+
+.pb-\[10px\] {
+  padding-bottom: 10px;
+}
+
+.pl-1 {
+  padding-left: 0.25rem;
 }
 
 .pl-\[1\.375rem\] {
@@ -966,14 +978,6 @@ video {
 
 .pt-9 {
   padding-top: 2.25rem;
-}
-
-.pb-\[10px\] {
-  padding-bottom: 10px;
-}
-
-.pl-1 {
-  padding-left: 0.25rem;
 }
 
 .text-center {
@@ -1017,6 +1021,10 @@ video {
 
 .font-semibold {
   font-weight: 600;
+}
+
+.tracking-tighter {
+  letter-spacing: -0.05em;
 }
 
 .text-indigo-500 {
