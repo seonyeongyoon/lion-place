@@ -30,18 +30,18 @@ function createUserCard({
   visitDate = "",
 }) {
   const template = `
-  <li class="reviewItem mt-4 overflow-hidden rounded-2XL bg-white">
+  <li class="reviewItem mt4 overflow-hidden rounded2xl bg-white">
     <a href="/" class="flex">
       <figure>
         <img src="${image}" alt="${alt}" />
       </figure>
       <div
-        class="flex flex-shrink-0 flex-grow flex-col justify-center pl-3 pr-3"
+        class="flex flex-shrink-0 flex-grow flex-col justify-center p3 pr-3"
       >
         <h3 class="flex justify-between space-x-2 font-semibold">
           ${store}<i class="inline-block"
             ><img
-              src="./../../assets/icons/call.svg"
+              src="/assets/icons/call.svg"
               alt="전화기 아이콘"
           /></i>
         </h3>
