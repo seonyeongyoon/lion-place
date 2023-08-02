@@ -208,6 +208,7 @@
             <div class="relative h-[11.5rem] w-[9.25rem]">
               <!-- 이미지 그라디언트 -->
               <a
+                href="./themeEnroll2.html"
                 class="absolute left-0 top-0 h-[184px] w-[148px] cursor-pointer rounded-md bg-gradient-to-t from-white"
               ></a>
               <img
@@ -271,8 +272,8 @@
             </div>
             <!-- #우측 컨테이너 -->
             <a
-              href=""
-              class="relative h-[11.5rem] w-[9.25rem] rounded-md bg-lime-500"
+              href="./../review/plusReview.html"
+              class="relative h-[11.5rem] w-[9.25rem] rounded-md"
             >
               <div
                 class="flex h-[11.5rem] w-[9.25rem] flex-col items-center justify-center gap-[0.875rem] rounded-md bg-white"
@@ -295,26 +296,28 @@
           </div>
         </div>
         <!-- #필터 -->
-        <div class="container bg-yellow-300 p-3">
+        <div class="container p-3">
           <!-- 전체 / 사진 -->
-          <div class="inline-flex items-center justify-between">
-            <button
-              class="tabButton flex flex-row items-center gap-1"
-              data-list="1"
-            >
-              <img
-                src="/assets/icons/swiper/hamburgerBtn.svg"
-                alt="메뉴 버튼"
-              />
-              <span class="text-xs font-semibold text-gray/300">전체</span>
-            </button>
-            <button
-              class="tabButton flex flex-row items-center gap-1"
-              data-list="2"
-            >
-              <img src="/assets/icons/swiper/photo.svg" alt="카메라 아이콘" />
-              <span class="text-xs font-semibold text-black">사진</span>
-            </button>
+          <div class="flex items-center justify-between py-2">
+            <div class="flex gap-2">
+              <button
+                class="tabButton flex flex-row items-center gap-1"
+                data-list="1"
+              >
+                <img
+                  src="/assets/icons/swiper/hamburgerBtn.svg"
+                  alt="메뉴 버튼"
+                />
+                <span class="text-xs font-semibold text-gray/300">전체</span>
+              </button>
+              <button
+                class="tabButton flex flex-row items-center gap-1"
+                data-list="2"
+              >
+                <img src="/assets/icons/swiper/photo.svg" alt="카메라 아이콘" />
+                <span class="text-xs font-semibold text-black">사진</span>
+              </button>
+            </div>
 
             <!-- 최신순 -->
             <div class="flex items-center">
@@ -494,17 +497,18 @@
             </div>
           </section>
           <!-- #review Choice -->
-          <!-- <section
-            class="tabContents block bg-yellow-200 object-cover pt-5"
+
+          <section
+            class="tabContents block bg-white object-cover pt-5"
             data-order="2"
           >
             <div class="titleArea flex justify-between p-4">
               <button>
-                <img src="./../../assets/icons/left.svg" alt="뒤로가기 버튼" />
+                <img src="/assets/icons/left-black.svg" alt="뒤로가기 버튼" />
               </button>
               <h2 class="text-center text-base font-semibold">리뷰 선택</h2>
               <button>
-                <img src="./../../assets/icons/close.svg" alt="닫기 버튼" />
+                <img src="/assets/icons/close.svg" alt="닫기 버튼" />
               </button>
             </div>
             <div class="bg-gray-100 p-4">
@@ -513,14 +517,14 @@
                   <button class="mr-3 text-xs font-semibold">
                     <i class="mr-3 inline-block"
                       ><img
-                        src="./../../assets/icons/hamburger.svg"
+                        src="/assets/icons/hamburger.svg"
                         alt="햄버거메뉴 버튼" /></i
                     ><span class="align-top">전체</span>
                   </button>
                   <button class="text-xs font-semibold text-gray/300">
                     <i class="mr-3 inline-block"
                       ><img
-                        src="./../../assets/icons/photo.svg"
+                        src="/assets/icons/swiper/photo.svg"
                         alt="카메라 버튼" /></i
                     ><span class="align-top">사진</span>
                   </button>
@@ -529,16 +533,14 @@
                   <button class="text-xs font-semibold text-gray/500">
                     <span class="align-top">최신순</span
                     ><i class="inline-block"
-                      ><img
-                        src="./../../assets/icons/down.svg"
-                        alt="화살표 아이콘"
+                      ><img src="/assets/icons/down.svg" alt="화살표 아이콘"
                     /></i>
                   </button>
                 </div>
               </div>
               <ul class="reviewList"></ul>
             </div>
-          </section> -->
+          </section>
         </div>
       </main>
       <!-- !nav -->

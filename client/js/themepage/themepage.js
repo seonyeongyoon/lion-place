@@ -3,36 +3,6 @@ import { getNode, getNodes } from "/lib/dom/getNode.js";
 getNode;
 getNodes;
 
-// const tabContainer = getNode(".container");
-// const tabButtons = getNodes(".tabButton");
-// const tabContents = getNodes(".tabContents");
-
-// function handleTab(e) {
-//   const target = e.target.closest(".tabButton");
-
-//   if (!target) return;
-
-//   const list = getNodes(".tabContents");
-//   // target의 index 넘버
-//   // const index = attr(target, "data-index");
-
-//   list.forEach((section) => {
-//     console.log(list);
-//     removeClass(section, "hidden");
-//   });
-
-//   addClass(section, "hidden");
-
-//   // // 비주얼 이미지 변경
-//   // visualImage.src = attr(thumb, "src", `./../assets/${data.name}`.src);
-//   // // 비주얼 이미지 alt 값 변경
-//   // visualImage.alt = attr(thumb, "alt", `./${data.alt}`.alt);
-
-//   // // 닉네임 변경
-//   // nickName.textContent = data[index - 1].name;
-// }
-
-// tabContainer.addEventListener("click", handleTab);
 function addClass(element, className) {
   if (!element.classList.contains(className)) {
     element.classList.add(className);
@@ -48,6 +18,8 @@ function removeClass(element, className) {
 const tabContainer = getNode(".container");
 const tabButtons = getNodes(".tabButton");
 const tabContents = getNodes(".tabContents");
+
+tabContents[1].classList.add("hidden");
 
 function handleTab(e) {
   const target = e.target.closest(".tabButton");

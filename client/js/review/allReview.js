@@ -1,4 +1,8 @@
-import { getNode } from "./../../lib/dom/getNode.js";
+import { getNode, getNodes } from "/lib/dom/getNode.js";
+
+import { createReviewMap } from "/lib/index.js";
+
+createReviewMap("#reviewMap", 37.558048589925534, 126.91122939941944);
 
 const bar = getNode(".bar");
 
@@ -17,3 +21,30 @@ function handleScroll() {
 }
 
 window.addEventListener("scroll", handleScroll);
+
+// swiperSlide.forEach((element) => {
+//   element.style.width = "150px";
+//   element.style.height = "150px";
+//   element.style.margin = "0";
+//   element.style.padding = "0";
+// });
+var slide = new Swiper(".swiper", {
+  slidesPerView: "1",
+  loop: false,
+  pagination: true,
+  // navigation: {
+  //   nextEl: ".swiper-button-next",
+  //   prevEl: ".swiper-button-prev",
+  // },
+  breakpoints: {
+    //반응형
+    320: {
+      slidesPerView: 3,
+      spaceBetween: 5,
+    },
+    640: {
+      slidesPerView: 4,
+      spaceBetween: 5,
+    },
+  },
+});

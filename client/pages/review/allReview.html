@@ -10,12 +10,19 @@
       crossorigin
       href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard-dynamic-subset.css"
     />
-    <link rel="stylesheet" href="/css/main.css" />
+
     <script
       type="text/javascript"
       src="//dapi.kakao.com/v2/maps/sdk.js?appkey=25319638cf6e1239fa6f8c8fa0ce21df"
     ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="/css/main.css" />
     <script src="/js/map/reviewMap.js" type="module"></script>
     <script src="/js/review/allReview.js" type="module"></script>
   </head>
@@ -166,17 +173,34 @@
           <!-- map -->
           <div id="reviewMap" class="h-[350px]"></div>
           <!-- 상세이미지 -->
-          <div class="flex gap-2">
-            <img
-              src="/assets/images/map/review-map-image-2.png"
-              alt="상품이미지"
-              class="h-32 w-32"
-            />
-            <img
-              src="/assets/images/map/review-map-image-1.png"
-              alt="상품이미지"
-              class="h-32 w-32"
-            />
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper inline-flex h-[150px] w-[150px]">
+              <img
+                src="/assets/images/map/review-map-image-2.png"
+                alt="상품이미지"
+                class="swiper-slide"
+              />
+              <img
+                src="/assets/images/map/review-map-image-1.png"
+                alt="상품이미지"
+                class="swiper-slide"
+              />
+              <img
+                src="/assets/images/review/allReview/img3.png"
+                alt="상품이미지"
+                class="swiper-slide"
+              />
+              <img
+                src="/assets/images/review/allReview/img4.png"
+                alt="상품이미지"
+                class="swiper-slide"
+              />
+              <img
+                src="/assets/images/review/allReview/visitor1.jpg"
+                alt="상품이미지"
+                class="swiper-slide"
+              />
+            </div>
           </div>
           <!-- 매장정보 -->
           <section class="mt-4">
@@ -1158,14 +1182,17 @@
       <footer class="h-32 bg-gray/100 py-4">
         <ul class="flex items-center justify-center">
           <li class="text-xs font-semibold text-gray/500">
-            <a href="#">이용약관</a>&nbsp;|&nbsp;
+            <a href="#">이용약관</a>
           </li>
+          &nbsp;|&nbsp;
           <li class="text-xs font-semibold text-gray/500">
-            <a href="#">고객센터</a>&nbsp;|&nbsp;
+            <a href="#">고객센터</a>
           </li>
+          &nbsp;|&nbsp;
           <li class="text-xs font-semibold text-gray/500">
-            <a href="#">리뷰운영정책</a>&nbsp;|&nbsp;
+            <a href="#">리뷰운영정책</a>
           </li>
+          &nbsp;|&nbsp;
           <li class="text-xs font-semibold text-gray/500">
             <a href="#">신소센터</a>
           </li>
